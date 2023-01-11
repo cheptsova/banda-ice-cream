@@ -1,0 +1,23 @@
+.advantages {
+  display: block;
+  text-align: center;
+
+  color: #fcfcfc;
+  background-color: #84a178;
+  &__list {
+    padding-bottom: 32px;
+  }
+  &__item {
+    padding-top: 28px;
+  }
+  &__text {
+    font-size: 12px;
+    font-weight: 700;
+    padding-top: 16px;
+  }
+  &__size {
+    font-size: 36px;
+    font-weight: 700;
+    padding-top: 16px;
+  }
+}
