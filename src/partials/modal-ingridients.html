@@ -1,0 +1,97 @@
+<div class="modal-ingedients">
+
+    <button type="button" class="modal-ingedients--close" data-modal-close="">
+                    <svg width="17" height="17">
+                        <use href="./images/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+
+    <h2 class="modal-ingedients__title">Chololate icecream</h2>
+
+    <picture>
+        <source srcset="./images/cho-icecream_desk.png 1x, 
+        ./images/cho-icecream_desk-2x.png 2x. 
+        ./images/cho-icecream_desk-3x.png 3x"
+         media="(min-width: 1200px)" />
+
+       <source srcset="./images/cho-icecream_mob.png 1x, 
+        ./images/cho-icecream_mob-2x.png 2x. 
+        ./images/cho-icecream_mob-3x.png 3x"
+         media="(min-width: 480px)" />
+
+       <img srcset="./images/cho-icecream_desk.png 1x, 
+        ./images/cho-icecream_desk-2x.png 2x. 
+        ./images/cho-icecream_desk-3x.png 3x"
+        src="./images/cho-icecream_desk.png" alt="ice-cream" width="132">
+
+    </picture>
+
+    <ul class="energy-value list">
+        <li class="energy-value__item">
+            <div class="energy-value__box">ckal</div>
+            <div class="energy-value__circle">320</div>
+        </li>
+        <li class="energy-value__item">
+            <div class="energy-value__box">Prote..</div>
+            <div class="energy-value__circle">4g</div>
+        </li>
+        <li class="energy-value__item">
+            <div class="energy-value__box">Fats</div>
+            <div class="energy-value__circle">8.2g</div>
+        </li>
+        <li class="energy-value__item">
+            <div class="energy-value__box">Carbs</div>
+            <div class="energy-value__circle">40,4g</div>
+        </li>
+    </ul>
+
+    <h3 class="cho-icecream-ingred">Ingredients</h3>
+  <ul class="cho-icecream-ingred__list list">
+    <li class="cho-icecream-ingred__item">
+        <p>Milk</p>
+        <p>100ml</p>
+
+    </li>
+    <li class="cho-icecream-ingred__item">
+        <p>Belgian chocolate</p>
+        <p>150 ml</p>
+    </li>
+    <li class="cho-icecream-ingred__item">
+        <p>Cocoa powder</p>
+        <p>30g</p>
+    </li>
+    <li class="cho-icecream-ingred__item">
+        <p>Sugar</p>
+        <p>40g</p>
+    </li>
+    <li class="cho-icecream-ingred_item">
+        <p>Vanilla sugar</p>
+        <p>10g</p>
+    </li>
+  </ul>
+<form class="modal-ingedients-form">
+    <div>
+        <label class="modal-ingedients-form__label">
+            <input type="name" name="name" placeholder="Name"
+            class="modal-ingedients-form__input"/>
+        </label>
+
+    </div>
+    <div>
+        <label>
+            <input type="phone" name="phone" placeholder="Phone"
+            class="modal-ingedients-form__input"/>
+        </label>
+    </div>
+
+    <div>
+           <label>
+            <textarea type="comment" name="comment" placeholder="Comment"
+            class="modal-ingedients-form__textarea">
+            </textarea>
+        </label>
+    </div>
+   <button type="button" class="modal-ingedients__btn">Submit</button>
+
+</form>
+</div>
