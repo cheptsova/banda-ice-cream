@@ -11,7 +11,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   line-height: 1.86;
-  color: --white-color;
+  color: $primary-text-color;
   background-color: $primary-bg-color;
   margin: 0;
 }
@@ -24,15 +24,11 @@ h5,
 h6,
 p {
   margin: 0;
+  padding: 0;
 }
 
 button {
   cursor: pointer;
-}
-
-img {
-  display: block;
-  max-width: 100%;
 }
 
 a {
@@ -47,8 +43,9 @@ ul {
 
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
+  margin: auto;
 }
 
 .hidden {
