@@ -8,12 +8,12 @@ html {
   box-sizing: inherit;
 }
 body {
-  background-color: var(--primary-text-color);
-  color: var(--content-text-color);
-  // font-family: sans-serif;
-  // letter-spacing: 0.03em;
-  // font-size: 14px;
-  // line-height: 1.71;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 1.86;
+  color: $primary-text-color;
+  background-color: $primary-bg-color;
+  margin: 0;
 }
 
 h1,
@@ -30,26 +30,22 @@ button {
   cursor: pointer;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-}
-
 a {
   text-decoration: none;
 }
 
 ul {
   list-style: none;
-  padding-left: 0px;
+  padding: 0px;
   margin: 0;
 }
 
-img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
+// img {
+//   display: block;
+//   max-width: 100%;
+//   height: auto;
+//   margin: auto;
+// }
 
 .hidden {
   position: absolute;
@@ -68,8 +64,8 @@ img {
 .container {
   margin: 0 auto;
   width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 16px;
+  padding-right: 16px;
 
   @media screen and (min-width: 480px) {
     width: 480px;
