@@ -24,7 +24,6 @@ h5,
 h6,
 p {
   margin: 0;
-  padding: 0;
 }
 
 button {
@@ -37,16 +36,16 @@ a {
 
 ul {
   list-style: none;
-  padding-left: 0px;
+  padding: 0px;
   margin: 0;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin: auto;
-}
+// img {
+//   display: block;
+//   max-width: 100%;
+//   height: auto;
+//   margin: auto;
+// }
 
 .hidden {
   position: absolute;
