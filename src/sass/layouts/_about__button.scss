@@ -1,0 +1,23 @@
+// Read More Modal button
+
+/* button */
+.about__button {
+  display: flex;
+  padding: 12px 51px 12px 34px;
+  gap: 7.75px;
+
+  align-items: center;
+
+  text-decoration: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+
+  color: #000000;
+}
+
+.about__button-arrow {
+  fill: #000000;
+}
