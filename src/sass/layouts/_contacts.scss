@@ -1,6 +1,6 @@
 .contacts {
   padding-bottom: 60px;
-  background-color: #84a178;
+  background-color: $primary-bg-color;
   @media screen and(min-width:768px) {
     padding-bottom: 40px;
   }
@@ -23,23 +23,19 @@
   padding-right: 32px;
   padding-top: 44px;
   padding-bottom: 24px;
-  background-color: #fcfcfc;
+  background-color: $primary-text-color;
   border-radius: 24px;
   margin-left: auto;
   margin-right: auto;
   width: calc(100% - 20px * 2);
-
+  margin-bottom: 16px;
+  &:last-child {
+    margin-bottom: 0px;
+  }
   @media screen and(min-width:480px) and(max-width:767px) {
     width: calc(100% - 100px * 2);
   }
-  @media screen and(max-width:767px) {
-    &:last-child {
-      margin-bottom: 0;
-    }
-    &:not(:last-child) {
-      margin-bottom: 16px;
-    }
-  }
+
   @media screen and(min-width:768px) {
     width: calc((100% - 16px * 2) / 3);
     margin: 0;
@@ -57,7 +53,7 @@
 .contacts__name {
   max-width: 130px;
   height: 22px;
-  background-color: #f8d24e;
+  background-color: $accent-color;
   margin-bottom: 12px;
   border-radius: 4px;
   display: flex;
@@ -72,7 +68,7 @@
   }
 
   & p {
-    font-family: 'Montserrat';
+    color: $tittle-text-color;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -93,8 +89,10 @@
   margin-bottom: 24px;
 }
 .contacts__address {
-  margin-bottom: 24px;
+  margin-bottom: 32px;
+
   & p {
+    color: $tittle-text-color;
     margin-bottom: 8px;
     font-family: 'Montserrat';
     font-weight: 500;
@@ -111,31 +109,34 @@
   }
   & a {
     height: 40px;
-    font-family: 'Montserrat';
     font-style: normal;
-    color: #d6936d;
+    color: $location-text-colour;
     letter-spacing: 0.04em;
     line-height: 1.83;
     font-size: 12px;
     text-align: left;
-    position: relative;
+
     transition: border-color 400ms;
+    @media screen and(min-width:768px) {
+      font-size: 14px;
+    }
     @media screen and(min-width:1200px) {
       height: 50px;
+      font-size: 16px;
+      width: 280px;
     }
   }
 
   & a:hover {
-    border-bottom: 1px solid #d6936d;
+    border-bottom: 1px solid $location-text-colour;
   }
 }
 .contacts__day {
-  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.83;
-  color: #131313;
+  color: $tittle-text-color;
   @media screen and(min-width:768px) {
     font-size: 14px;
   }
@@ -168,11 +169,11 @@
 .contacts__tel {
   display: flex;
   flex-wrap: wrap;
-  font-family: 'Montserrat';
+
   font-style: normal;
   font-size: 12px;
   line-height: 1.58;
-  color: #131313;
+  color: $tittle-text-color;
 
   margin-bottom: 6px;
 
@@ -186,11 +187,11 @@
 .contacts__mail {
   display: flex;
   flex-wrap: wrap;
-  font-family: 'Montserrat';
+
   font-style: normal;
   font-size: 12px;
   line-height: 1.58;
-  color: #131313;
+  color: $tittle-text-color;
   @media screen and(min-width:768px) {
     font-size: 14px;
   }
@@ -220,10 +221,10 @@
   margin-right: auto;
   margin-left: auto;
   border-radius: 10px;
-  background-color: #f8d24e;
+  background-color: $accent-color;
   border: none;
 
-  color: #000000;
+  color: $accent-text-color;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.28;
@@ -232,11 +233,12 @@
     margin: 0 16px 0 0;
   }
   &:hover {
-    background-color: #0a8817;
+    background-color: $accent-bg-color;
   }
   &:focus {
-    background-color: #0a8817;
-    color: #fcfcfc;
+    background-color: $accent-bg-color;
+    color: $primary-text-color;
+    fill: $primary-text-color;
   }
   &:disabled {
     background-color: #ababab;
@@ -252,7 +254,7 @@
   margin-left: auto;
   background-color: transparent;
   bottom: 2px;
-  border-color: #f8d24e;
+  border-color: $accent-color;
   border-radius: 10px;
   border-style: solid;
   @media screen and(min-width:768px) {
@@ -260,11 +262,12 @@
   }
 
   &:hover {
-    border-color: #0a8817;
+    border-color: $accent-bg-color;
   }
   &:focus {
-    border-color: #0a8817;
-    color: #fcfcfc;
+    border-color: $accent-bg-color;
+    color: $primary-text-color;
+    fill: $primary-text-color;
   }
   &:disabled {
     border-color: #ababab;
@@ -272,4 +275,5 @@
 }
 .contacts__button-icon {
   display: block;
+  margin-left: 4px;
 }
