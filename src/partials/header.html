@@ -1,0 +1,89 @@
+<header class="page-header">
+
+    <div class="page-header__container container">
+        <a href="./index.html" rel="noopener noreferer" class="page-header__logo">
+            <picture>
+                <source srcset="./images/logo_desk.png 1x,
+                                            ./images/logo_desk-2x.png 2x,
+                                            ./images/logo_desk-3x.png 3x" media="(min-width:1200px)">
+                <source srcset="./images/logo_tab.png 1x,
+                                            ./images/logo_tab-2x.png 2x,
+                                            ./images/logo_tab-3x.png 3x" media="(min-width:768px)">
+                <source srcset="./images/logo_mob.png 1x,
+                                            ./images/logo_mob-2x.png 2x,
+                                            ./images/logo_mob-3x.png 3x" media="(max-width:767px)">
+                <img srcset="./images/logo_desk.png 1x,
+                                            ./images/logo_desk-2x.png 2x,
+                                            ./images/logo_desk-3x.png 3x" src="./images/logo_desk.png" alt="logo">
+            </picture>
+        </a>
+
+        <nav class="page-header__nav">
+            <ul class="page-header__list">
+                <li class="page-header__item"><a id="home-link" href="#" class="page-header__link">Home</a></li>
+                <li class="page-header__item"><a id="how-made-link" href="#" class="page-header__link">How it's made?</a></li>
+                <li class="page-header__item"><a id="products-link" href="#" class="page-header__link">Our products</a></li>
+                <li class="page-header__item"><a id="contact-link" href="#" class="page-header__link">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="page-header__container--flex">
+            <button type="button" class="menu-toggle menu js-open-menu" aria-controls="mobile-menu"
+                aria-expanded="false">
+                <svg width="40" height="40" class="menu-button__svg" aria-label="Menu toggle">
+                    <use class="icon-burger" href="./images/icons.svg#icon-burger"></use>
+                </svg>
+            </button>
+
+            <button type="button" class="header__btn hidden__btn">Buy now
+                <svg class="header__svg--arrow">
+                    <use href="./images/icons.svg#small-arrow"></use>
+                </svg>
+            </button>
+        </div>
+
+    </div>
+    <!-- Мобільне меню -->
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+        <a href="./index.html" rel="noopener noreferer" class="menu-header__logo">
+            <picture>
+                <source srcset="./images/logo_desk.png 1x,
+                                                                    ./images/logo_desk-2x.png 2x,
+                                                                    ./images/logo_desk-3x.png 3x"
+                    media="(min-width:1200px)">
+                <source srcset="./images/logo_tab.png 1x,
+                                                                    ./images/logo_tab-2x.png 2x,
+                                                                    ./images/logo_tab-3x.png 3x"
+                    media="(min-width:768px)">
+                <source srcset="./images/logo_mob.png 1x,
+                                                                    ./images/logo_mob-2x.png 2x,
+                                                                    ./images/logo_mob-3x.png 3x"
+                    media="(max-width:767px)">
+                <img srcset="./images/logo_desk.png 1x,
+                                                                    ./images/logo_desk-2x.png 2x,
+                                                                    ./images/logo_desk-3x.png 3x"
+                    src="./images/logo_desk.png" alt="logo">
+            </picture>
+        </a>
+        <button type="button" class="menu-toggle cross js-close-menu">
+            <svg width="40" height="40" class="menu-button__svg" aria-label="Menu toggle">
+                <use class="icon-close" href="./images/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+        <div class="menu-header__container container">
+                <ul class="menu-header__list">
+                    <li class="menu-header__item"><a href="#" class="menu-header__link">Home</a></li>
+                    <li class="menu-header__item"><a href="#" class="menu-header__link">How it's made?</a></li>
+                    <li class="menu-header__item"><a href="#" class="menu-header__link">Our products</a></li>
+                    <li class="menu-header__item"><a href="#" class="menu-header__link">Contacts</a></li>
+                </ul>
+            
+
+            <button type="button" class="header__btn marginbtn">Buy now
+                <svg class="header__svg--arrow">
+                    <use href="./images/icons.svg#small-arrow"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+</header>
