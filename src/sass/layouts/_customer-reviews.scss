@@ -4,19 +4,20 @@
 
     @media screen and (min-width: 320px){
         background-image: url(../images/bg_mobile.png);
+        // width: 480px;
         padding-bottom: 40px;
     }
 
     @media screen and (min-width: 768px){
         background-image: url(../images/bg_tablet.png);
         padding-bottom: 60px;
-        width: 885px;
+        // width: 885px;
     }
 
     @media screen and (min-width: 1200px){
         background-image: url(../images/bg_desktop.png);
         padding-bottom: 100px;
-        width: 1332px;
+        // width: 100%;
     }
 }
 
@@ -45,6 +46,7 @@
 }
 
 .reviews__text{
+    align-items:center;
     margin-left: auto;
     margin-right: auto;
     background-color: #84A178;
@@ -61,8 +63,8 @@
     @media screen and (min-width: 1200px){
         width: 968px;
         height: 138px;
-        margin-left: 168px;
-        margin-right: 196px;
+        // margin-left: 168px;
+        // margin-right: 196px;
         border-radius: 24px;
         
     }
@@ -91,20 +93,4 @@
     color: #84A178;
     width: 12px;
     height: 12px;
-}
-
-.slick-dots{
-    @media screen and (min-width: 320px) {
-        
-        }
-    
-        @media screen and (min-width: 768px) {
-            background-image: url(../images/bg_tablet.png);
-            width: 885px;
-        }
-    
-        @media screen and (min-width: 1200px) {
-            background-image: url(../images/bg_desktop.png);
-            width: 1332px;
-        }
 }
