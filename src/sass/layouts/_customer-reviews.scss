@@ -2,22 +2,21 @@
     color: black;
     display: block;
 
-    @media screen and (max-width: 767px){
+    @media screen and (min-width: 320px){
         background-image: url(../images/bg_mobile.png);
-        height: 1069px;
-        width: 320px;
+        padding-bottom: 40px;
     }
 
     @media screen and (min-width: 768px){
         background-image: url(../images/bg_tablet.png);
-        height: 1211px;
+        padding-bottom: 60px;
         width: 885px;
     }
 
     @media screen and (min-width: 1200px){
         background-image: url(../images/bg_desktop.png);
+        padding-bottom: 100px;
         width: 1332px;
-        height: 1151;
     }
 }
 
@@ -94,3 +93,18 @@
     height: 12px;
 }
 
+.slick-dots{
+    @media screen and (min-width: 320px) {
+        
+        }
+    
+        @media screen and (min-width: 768px) {
+            background-image: url(../images/bg_tablet.png);
+            width: 885px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            background-image: url(../images/bg_desktop.png);
+            width: 1332px;
+        }
+}
