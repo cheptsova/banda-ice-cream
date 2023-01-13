@@ -1,18 +1,28 @@
 .gallery {
-  width: 100%;
+  max-width: 100%;
   margin-top: 27px;
-  &__img {
-    transform: translateY(-27px);
-  }
-  background-image: url(../images/bg_mobile.png),
+  background-image: url('../images/bg_mobile.png'),
     linear-gradient(to top, $primary-bg-color, $primary-bg-color);
+
+  &__img {
+    margin: auto;
+    height: 204px;
+    width: 440px;
+    border-radius: 24px;
+  }
 
   @media (min-width: 768px) and (max-width: 1199px) {
     width: 100%;
     margin-top: 144px;
-    background-image: url(../images/bg_tablet.png),
+    background-image: url('../images/bg_tablet.png'),
       linear-gradient(to top, $primary-bg-color, $primary-bg-color);
+
     &__img {
+      height: 327px;
+      width: 704px;
+    }
+
+    .slick-dotted.slick-slider {
       transform: translateY(-144px);
     }
   }
@@ -20,10 +30,17 @@
   @media (min-width: 1200px) {
     width: 100%;
     margin-top: 98px;
-    background-image: url(../images/bg_desktop.png),
+    background-image: url('../images/bg_desktop.png'),
       linear-gradient(to top, $primary-bg-color, $primary-bg-color);
     &__img {
+      height: 422px;
+      width: 1013px;
+    }
+    .slick-dotted.slick-slider {
       transform: translateY(-98px);
     }
   }
+}
+.slick-dotted.slick-slider {
+  transform: translateY(-27px);
 }

@@ -1,17 +1,39 @@
 <section class="gallery">
-  <div class="container ">
+  <div class="container">
     <h2 class="gallery__titel hidden">Gallery</h2>
-    <picture>
-      <source media="(min-width: 1200px)"
-        srcset="./images/gallery1-desktop.png 1x, ./images/gallery1@2x-desktop.png 2x, ./images/gallery1@3x-desktop.png 3x">
+    <div class="one-time">
+      <div class="gallery__list">
+        <picture>
+          <source media="(min-width: 1200px)"
+            srcset="./images/gallery1-desktop.png 1x, ./images/gallery1@2x-desktop.png 2x, ./images/gallery1@3x-desktop.png 3x">
 
-      <source media="(min-width: 768px)"
-        srcset="./images/gallery1-tablet.png 1x, ./images/gallery1@2x-tablet.png 2x, ./images/gallery1@3x-tablet.png 3x">
+          <source media="(min-width: 768px)"
+            srcset="./images/gallery1-tablet.png 1x, ./images/gallery1@2x-tablet.png 2x, ./images/gallery1@3x-tablet.png 3x">
 
-      <source media="(max-width: 767px)"
-        srcset="./images/gallery1-mobile.png 1x, ./images/gallery1@2x-mobile.png 2x, ./images/gallery1@3x-mobile.png 3x">
+          <source media="(max-width: 767px)"
+            srcset="./images/gallery1-mobile.png 1x, ./images/gallery1@2x-mobile.png 2x, ./images/gallery1@3x-mobile.png 3x">
 
-      <img class="gallery__img" src="./images/gallery1-desktop.png" alt="ice-cream">
-    </picture>
+          <img class="gallery__img" src="./images/gallery1-desktop.png" alt="ice-cream">
+        </picture>
+      </div>
+      <div class="gallery__list">
+        <picture>
+
+          <source
+            srcset="./images/gallery2-desktop.png 1x, ./images/gallery2@2x-desktop.png 2x, ./images/gallery2@3x-desktop.png 3x">
+
+          <img class="gallery__img" src="./images/gallery2-desktop.png" alt="ice-cream">
+        </picture>
+      </div>
+      <div class="gallery__list">
+        <picture>
+          <source
+            srcset="./images/gallery3-desktop.png 1x, ./images/gallery3@2x-desktop.png 2x, ./images/gallery3@3x-desktop.png 3x">
+
+          <img class="gallery__img" src="./images/gallery3-desktop.png" alt="ice-cream">
+        </picture>
+      </div>
+    </div>
+
   </div>
 </section>
