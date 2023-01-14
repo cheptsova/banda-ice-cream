@@ -135,7 +135,8 @@ button {
     border: none;
 
     transition: border 500ms cubic-bezier(0.4, 0, 0.2, 1),
-        color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+        color 500ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 500ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover {
         background-color: $accent-bg-color;
@@ -143,7 +144,8 @@ button {
 
     &:focus {
         background-color: $accent-bg-color;
-        color: $white-color;
+        color: $primary-text-color;
+        fill: $primary-text-color;
     }
 
     &:disabled {
@@ -188,16 +190,6 @@ button {
 
     &:disabled {
         border: 2px solid $btn-disabled-color;
-    }
-}
-
-/* ---------іконка галочка--------- */
-.button-icon {
-    fill: $accent-text-color;
-    transition: fill 500ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:focus {
-        fill: $white-color;
     }
 }
 
