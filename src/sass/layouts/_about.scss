@@ -1,0 +1,221 @@
+.about {
+    padding: 60px 20px 30px 20px;
+    text-align: center;
+
+    @media screen and (min-width: 480px) {
+        padding: 60px 100px 30px 100px;
+    }
+
+    @media screen and (min-width: 768px) {
+        padding: 60px 34px 30px 34px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding: 60px 121px 30px 17px;
+    }
+}
+
+.about__wrap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 40px;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        gap: 38px;
+    }
+ 
+    @media screen and (min-width: 1200px) {
+        gap: 109px;
+        align-items: center;
+    }
+}
+
+.image-wrap {
+    display: block;
+    max-width: 280px;
+    max-height: 280px;
+
+    margin: 0 auto;
+
+    background-color:$accent-color;
+    background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+    box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
+    border-radius: 50%;
+
+    @media screen and (min-width: 768px) {
+        max-width: 330px;
+        min-height: 330px;
+    }
+
+
+    @media screen and (min-width: 1200px) {
+        min-width: 490px;
+        min-height: 490px;
+    }
+}
+
+.about__image {
+    max-width: 280px;
+    height: 100%;
+
+    border-radius: 50%;
+    box-shadow: 0px 5.30813px 19.9055px rgba(153, 114, 23, 0.25);
+
+    @media screen and (min-width: 768px) {
+        min-width: 330px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        min-width: 490px;
+        object-position: 0px 0px;
+    }
+
+}
+
+.image-wrap img {
+    transform: translateY(10%);
+}
+
+.about__label {
+    margin-bottom: 12px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(22/18);
+    text-transform: uppercase;
+}
+
+.about__label-mob {
+    display: block;
+
+    @media screen and (min-width: 480px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: block;
+        font-weight: 800;
+        font-size: 22px;
+        line-height: calc(27/22);
+        letter-spacing: 0.04em;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 30px;
+        line-height: calc(37/30);
+    }
+}
+
+.about__label-tab {
+    @media screen and (max-width: 479px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 480px) {
+        display: block;
+        margin-bottom: 54px;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.about__title {
+    max-width: 200px;
+    margin: 0 auto;
+    margin-bottom: 54px;
+
+    font-family: 'Seymour One';
+    font-size: 30px;
+    line-height: calc(38/30);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 480px) {
+        margin-bottom: 12px;
+    }
+
+    @media screen and (min-width: 768px) {
+        min-width: 100%;
+        margin-bottom: 80px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 121px;
+
+        font-size: 36px;
+        line-height: calc(45/36);
+        letter-spacing: 0.06em;
+    }
+}
+
+.about__text {
+    margin: 0 auto;
+    margin-bottom: 10px;
+    max-width: 220px;
+
+    font-size: 12px;
+
+    @media screen and (min-width: 768px) {
+        max-width: 336px;
+        margin-left: 0px;
+        text-align: left;
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 463px;
+    }
+}
+
+.text__first {
+    margin-bottom: 4px;
+
+    line-height: 1.76;
+    letter-spacing: 0.04em;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 8px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 16px;
+    }
+}
+
+.text__second {
+    margin-bottom: 24px;
+
+    line-height: 1.62;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 8px;
+        line-height: 1.76;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.94;
+    }
+}
+
+.text__hidden-mobile {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: block;
+        margin-bottom: 32px;
+        
+        line-height: 1.94;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+    }
+}
