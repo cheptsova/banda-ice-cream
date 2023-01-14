@@ -1,0 +1,87 @@
+<section class="hero container">
+    <div class="hero__container--top">
+        <h2 class="hero__title animate__animated animate__zoomInDown">ICE CREAM MADE WITH PASSION</h2>
+        <ul class="hero-list__numbers">
+            <li class="hero-list__item">
+                <span>16</span>
+                <p class="hero-list__paragraph">cafes</p>
+            </li>
+            <li class="hero-list__item">
+                <span>23</span>
+                <p class="hero-list__paragraph">food trucks</p>
+            </li>
+        </ul>
+    </div>
+
+    <div class="hero__container--left">
+
+        <button id="hero__buynow-button" class="hero__button hero__buynow-button">Products</button>
+        <a id="hero__howit" href="#" class="hero__link hero__howit">How it’s made?</a>
+    </div>
+
+    <!-- More ice-cream pic -->
+    <picture>
+        <source srcset="./images/hero-more_desk.png 1x,
+                                            ./images/hero-more_desk-2x.png 2x,
+                                            ./images/hero-more_desk-3x.png 3x" media="(min-width:1200px)">
+        <source srcset="./images/hero-more_tab.png 1x,
+                                            ./images/hero-more_tab-2x.png 2x,
+                                            ./images/hero-more_tab-3x.png 3x" media="(min-width:768px)">
+        <img class="hero-bottom__img animate__animated animate__rotateIn" srcset="./images/hero-more_desk.png 1x,
+                                        ./images/hero-more_desk-2x.png 2x,
+                                        ./images/hero-more_desk-3x.png 3x" src="./images/hero-more_desk.png"
+            alt="more ice-cream">
+    </picture>
+
+    <!-- Hero-text -->
+    <div class="hero-bottom">
+        <p class="hero-bottom__paragraph">Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et
+            <svg class="hero-bottom__svg--arrow">
+                <use href="./images/icons.svg#icon-arrow"></use>
+            </svg>
+        </p>
+    </div>
+    <!-- Hero-points -->
+    <picture>
+        <source srcset="./images/hero-points_desk.png 1x,
+                        ./images/hero-points_desk-2x.png 2x,
+                        ./images/hero-points_desk-3x.png 3x" media="(min-width:1200px)">
+        <source srcset="./images/hero-points_tab.png 1x,
+                        ./images/hero-points_tab-2x.png 2x,
+                        ./images/hero-points_tab-3x.png 3x" media="(min-width:768px)">
+        <source srcset="./images/hero-points_mob.png 1x,
+                        ./images/hero-points_mob-2x.png 2x,
+                        ./images/hero-points_mob-3x.png 3x" media="(max-width:767px)">
+
+        <img class="hero-points" srcset="./images/hero-points_desk.png 1x,
+                        ./images/hero-points_desk-2x.png 2x,
+                        ./images/hero-points_desk-3x.png 3x" src="./images/hero-points_desk.png" alt="hero-points">
+    </picture>
+
+    <!-- Hero big ice-cream -->
+    <picture>
+        <source srcset="
+            ./images/hero-one_desk.png    1x,
+            ./images/hero-one_desk-2x.png 2x,
+            ./images/hero-one_desk-3x.png 3x
+          " media="(min-width:1200px)" />
+        <source srcset="
+            ./images/hero-one_tab.png    1x,
+            ./images/hero-one_tab-2x.png 2x,
+            ./images/hero-one_tab-3x.png 3x
+          " media="(min-width:768px)" />
+        <source srcset="
+            ./images/hero-one_mob.png    1x,
+            ./images/hero-one_mob-2x.png 2x,
+            ./images/hero-one_mob-3x.png 3x
+          " media="(max-width:767px)" />
+
+        <img class="hero-one animate__animated animate__tada" srcset="
+            ./images/hero-one_desk.png    1x,
+            ./images/hero-one_desk-2x.png 2x,
+            ./images/hero-one_desk-3x.png 3x
+          " src="./images/hero-one_desk.png" alt="ice-cream" />
+    </picture>
+</section>

@@ -29,7 +29,7 @@
   margin-right: auto;
   width: calc(100% - 20px * 2);
   margin-bottom: 16px;
-  transition: transform, box-shadow $timeng-function;
+  transition: transform, box-shadow $timing-function;
 
   &:last-child {
     margin-bottom: 0px;

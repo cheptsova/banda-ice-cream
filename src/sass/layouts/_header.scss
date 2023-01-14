@@ -1,0 +1,251 @@
+.page-header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 12px;
+
+  @media screen and (min-width: 480px) {
+    padding-top: 14px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    justify-content: space-between;
+    padding-top: 0;
+  }
+}
+
+.page-header__nav {
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
+.page-header__container--flex {
+  display: flex;
+  align-items: center;
+}
+
+.header__btn {
+  display: block;
+  position: relative;
+  margin: 0;
+
+  text-align: center;
+  padding: 12px 36px;
+  width: 152px;
+  height: 42px;
+  border-radius: 10px;
+  border: none;
+
+  color: $accent-text-color;
+  background-color: $accent-color;
+}
+
+.marginbtn {
+  @media screen and (max-width: 767px) {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.hidden__btn {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin-left: 32px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 0;
+  }
+}
+
+.header__svg--arrow {
+  position: absolute;
+  align-items: center;
+  width: 12px;
+  height: 12px;
+
+  transform: translateY(27%);
+  margin-left: 4px;
+}
+
+.page-header__list {
+  display: flex;
+  align-items: center;
+}
+
+.page-header__list .page-header__item + .page-header__item {
+  margin-left: 30px;
+}
+
+.page-header__link {
+  padding-top: 32px;
+  padding-bottom: 13px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.2;
+  display: flex;
+  align-items: center;
+  color: $white-color;
+
+  color: $primary-text-color;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  // height: 100vh;
+  z-index: 999;
+  background-color: $primary-bg-color;
+  transform: translateX(100%);
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: $timing-function;
+  padding: 12px 20px;
+
+  @media screen and (max-width: 320px) {
+    width: auto;
+  }
+
+  @media screen and (min-width: 480px) {
+    padding: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 20px 32px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.menu-header__logo {
+  position: absolute;
+}
+
+.mobile-menu.is-open {
+  transform: translateX(0);
+}
+
+.menu-header__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  padding-top: 50px;
+  padding-bottom: 64px;
+  padding: 50px 40px;
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    // padding-top: 40px;
+    // padding-bottom: 88px;
+    padding: 40px 32px;
+    width: 100%;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 76px;
+    width: 100%;
+  }
+}
+
+.menu-header__list .menu-header__item + .menu-header__item {
+  margin-top: 32px;
+}
+
+.menu-header__link {
+  display: block;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.18;
+  align-items: center;
+  text-align: center;
+  color: $white-color;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-text-color;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: 1.2;
+  }
+}
+
+.menu-toggle {
+  fill: $primary-text-color;
+  display: flex;
+  width: 32px;
+  height: 32px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: $timing-function;
+
+  &:hover,
+  &:focus {
+    fill: $accent-text-color;
+  }
+
+  @media screen and (min-width: 320px) {
+    display: block;
+  }
+
+  @media screen and (min-width: 480px) {
+    display: block;
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.menu-toggle.cross {
+  display: flex;
+  position: absolute;
+  right: 15px;
+  top: 14px;
+}
+
+.menu-toggle.menu {
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}
