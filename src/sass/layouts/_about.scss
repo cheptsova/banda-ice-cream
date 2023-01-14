@@ -219,3 +219,14 @@
         font-size: 14px;
     }
 }
+
+.about__button {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-icon {
+    display: block;
+    margin-left: 4px;
+}
