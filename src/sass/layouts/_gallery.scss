@@ -33,21 +33,3 @@
 .slick-dotted.slick-slider {
   transform: translateY(-27px);
 }
-
-.slick-prev:before {
-  content: '';
-}
-.slick-next:before {
-  content: '';
-}
-.slick-prev,
-.slick-next {
-  font-size: 0;
-  line-height: 0;
-  position: absolute;
-  top: 50%;
-  display: block;
-  width: 0;
-  height: 0;
-  padding: 0;
-}
