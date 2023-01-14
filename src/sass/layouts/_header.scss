@@ -30,7 +30,7 @@
 
 .page-header__container--flex {
     display: flex;
-    justify-content: flex-end;
+   align-items: center;
 }
 
 .header__btn {
@@ -121,6 +121,7 @@
     position: fixed;
     top: 0;
     left: 0;
+    
     width: 100vw;
     height: 100vh;
     z-index: 999;
@@ -131,8 +132,13 @@
     transition-timing-function: $timing-function;
     padding: 12px 20px;
 
+    @media screen and (max-width:320px) {
+        width: auto;
+    }
+
     @media screen and (min-width:480px) {
         padding: 20px;
+        
     }
 
     @media screen and (min-width:768px) {
@@ -210,8 +216,8 @@
 .menu-toggle {
     fill: $primary-text-color;
     display: flex;
-    min-width: 32px;
-    min-height: 32px;
+    width: 32px;
+    height: 32px;
     margin: 0;
     padding: 0;
     border: none;
@@ -225,6 +231,17 @@
         fill: $accent-text-color;
     }
 
+    @media screen and (min-width:320px) {
+        display: block;
+    }
+
+    @media screen and (min-width:480px) {
+        display: block;
+    }
+
+    @media screen and (min-width:768px) {
+        
+    }
 
 
     @media screen and (min-width:1200px) {

@@ -1,6 +1,6 @@
-<header class="page-header">
-
-    <div class="page-header__container container">
+<header>
+<div class="page-header container">
+    <div class="page-header__container">
         <a href="./index.html" rel="noopener noreferer" class="page-header__logo animate__animated animate__flip">
             <picture>
                 <source srcset="./images/logo_desk.png 1x,
@@ -31,7 +31,7 @@
         <div class="page-header__container--flex">
             <button type="button" class="menu-toggle menu js-open-menu" aria-controls="mobile-menu"
                 aria-expanded="false">
-                <svg width="40" height="40" class="menu-button__svg" aria-label="Menu toggle">
+                <svg width="32" height="32" class="menu-button__svg" aria-label="Menu toggle">
                     <use class="icon-burger" href="./images/icons.svg#icon-burger"></use>
                 </svg>
             </button>
@@ -63,8 +63,8 @@
             </picture>
         </a>
         <button type="button" class="menu-toggle cross js-close-menu">
-            <svg width="40" height="40" class="menu-button__svg" aria-label="Menu toggle">
-                <use class="icon-close" href="./images/icons.svg#icon-close"></use>
+            <svg id="close-mobile" width="32" height="32" class="menu-button__svg close-mobile" aria-label="Menu toggle">
+                <use href="./images/icons.svg#icon-close"></use>
             </svg>
         </button>
         <div class="menu-header__container container">
@@ -83,5 +83,5 @@
             </button>
         </div>
     </div>
-
+</div>
 </header>
