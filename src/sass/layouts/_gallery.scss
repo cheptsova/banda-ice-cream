@@ -1,16 +1,15 @@
 .gallery {
-  max-width: 100%;
+  width: 100%;
   margin-top: 27px;
   background-image: url('../images/bg_mobile.png'),
     linear-gradient(to top, $primary-bg-color, $primary-bg-color);
-
   &__img {
-    max-width: 100%;
+    width: 100%;
     margin: auto;
     border-radius: 24px;
   }
 
-  @media (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-top: 144px;
     background-image: url('../images/bg_tablet.png'),
       linear-gradient(to top, $primary-bg-color, $primary-bg-color);
@@ -20,7 +19,7 @@
     }
   }
 
-  @media (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     margin-top: 98px;
     background-image: url('../images/bg_desktop.png'),
       linear-gradient(to top, $primary-bg-color, $primary-bg-color);
@@ -33,6 +32,24 @@
 
 .slick-dotted.slick-slider {
   transform: translateY(-27px);
-  border: none;
-  width: 100%;
+}
+
+@media screen and (max-width: 1199px) {
+  .slick-prev:before {
+    content: '';
+  }
+  .slick-next:before {
+    content: '';
+  }
+  .slick-prev,
+  .slick-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 0;
+    height: 0;
+    padding: 0;
+  }
 }
