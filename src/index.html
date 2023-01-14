@@ -5,6 +5,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Page title</title>
+  <!-- slick css-->
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -12,9 +17,10 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Montserrat:wght@400;500;600;700;800;900&family=Seymour+One&display=swap"
     rel="stylesheet" />
-
   <!-- Base styles -->
   <link rel="stylesheet" href="./sass/index.scss" />
+  <!-- Favicon -->
+  <link rel="icon" href="/src/images/favicon.ico" type="image/x-icon">
   <!-- Base JS -->
   <script type="module" src="./index.js"></script>
 </head>
@@ -33,13 +39,21 @@
     <include src="./partials/contacts.html"></include>
   </main>
   <include src="./partials/footer.html"></include>
+  <!--slick jquery -->
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+  <!--slick js-->
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <!--base js-->
+  <script src="./js/gallery.js" type="module"></script>
+  <script src="./_slick.js" type="module"></script>
   <include src="./partials/modal-buy-now.html"></include>
   <include src="./partials/modal-ingridients.html"></include>
   <include src="./partials/modal-video.html"></include>
   <include src="./partials/modal-locations.html"></include>
   <include src="./partials/modal-franches.html"></include>
-
-  <script src="./js/gallery.js" type="module"></script>
 </body>
 
 </html>
