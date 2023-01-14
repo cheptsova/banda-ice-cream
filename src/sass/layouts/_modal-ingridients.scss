@@ -34,12 +34,26 @@ margin-left: auto;
 margin-right: auto;
 }
 
-.modal-ingedients_picture {
-    display: block;
-   margin-left: auto;
-   margin-right: auto;
+.modal-ingedients__wrap {
+ text-align: center;
    margin-bottom: 22px;
+   position: relative;
 }
+.cho-icecream-img {
+   z-index: 999;
+}
+
+.modal-ingedients__circle {
+  width: 132px;
+  height: 132px;
+   border-radius: 50%;
+   position: absolute;
+   top: 10%;
+   left: 23%;
+background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+}
+
 
 .energy-value {
     margin-bottom: 40px;
