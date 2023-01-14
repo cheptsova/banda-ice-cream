@@ -20,13 +20,10 @@
 }
 
 .modal-ingedients--close {
-    // fill: $tittle-text-color;
-    // background-color: $primary-text-color;
     display: block;
-    // border: none;
-    margin-left: auto;
-    margin-right: 0;
-    display: block;
+    position: absolute;
+    top: 17px;
+    right: 17px;
 }
 
 .modal-ingedients__title{
@@ -54,6 +51,8 @@ margin-right: auto;
    position: relative;
    margin-left: auto;
    margin-right: auto;
+
+   transform: translateY(10%);
 
    background-color: #9CBE8F;
    border-radius: 50%;
