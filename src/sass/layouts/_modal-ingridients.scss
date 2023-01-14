@@ -22,7 +22,7 @@
 .modal-ingedients--close {
     // fill: $tittle-text-color;
     // background-color: $primary-text-color;
-    // display: block;
+    display: block;
     // border: none;
     margin-left: auto;
     margin-right: 0;
@@ -47,30 +47,26 @@ margin-right: auto;
 }
 
 .modal-ingedients__wrap {
- text-align: center;
-   margin-bottom: 22px;
+  max-width: 132px;
+  max-height: 132px;
+   margin-bottom: 23px;
    position: relative;
-}
-.cho-icecream-img {
-   z-index: 999;
-}
+   margin-left: auto;
+   margin-right: auto;
 
-.modal-ingedients__circle {
-  width: 132px;
-  height: 132px;
+   background-color: #9CBE8F;
    border-radius: 50%;
-   position: absolute;
-   top: 6%;
-   left: 22.5%;
-background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+   background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
 box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
-
- @media screen and (min-width: 768px) {
-  top: 5%;
-  left: 36.5%;
- }
 }
 
+.modal-ingedients__wrap img {
+ transform: translateY(-10%);
+}
+
+.cho-icecream-img {
+  display: block;
+}
 
 .energy-value {
     margin-bottom: 40px;
@@ -85,13 +81,6 @@ box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
     justify-content: center;
 }
 
-// .energy-value__item {
-// border: 2px solid #9CBE8F;
-// border-radius: 40px;
-// display: flex;
-
-// transform: rotate(180deg);
-// }
 
  .energy-value__elips {
     width: 53px;
