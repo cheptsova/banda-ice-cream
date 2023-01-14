@@ -173,6 +173,7 @@ ul {
   margin-right: auto;
   width: calc(100% - 40px);
   margin-bottom: 16px;
+  transition: transform, box-shadow cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts__item:last-child {
   margin-bottom: 0px;
@@ -389,13 +390,10 @@ ul {
 }
 
 .contacts__location-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 196px;
-  height: 42px;
   margin-right: auto;
   margin-left: auto;
+  min-width: 196px;
+  height: 42px;
   border-radius: 10px;
   background-color: #f8d24e;
   border: none;
@@ -406,7 +404,7 @@ ul {
 }
 @media screen and (min-width: 768px) {
   .contacts__location-button {
-    margin: 0 16px 0 0;
+    margin-right: 16px;
   }
 }
 .contacts__location-button:hover {
@@ -422,13 +420,10 @@ ul {
 }
 
 .contacts__franchise-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 196px;
-  height: 42px;
   margin-right: auto;
   margin-left: auto;
+  min-width: 196px;
+  height: 42px;
   background-color: transparent;
   bottom: 2px;
   border-color: #f8d24e;
@@ -437,7 +432,7 @@ ul {
 }
 @media screen and (min-width: 768px) {
   .contacts__franchise-button {
-    margin: 0;
+    margin: 0px;
   }
 }
 .contacts__franchise-button:hover {
@@ -450,6 +445,18 @@ ul {
 }
 .contacts__franchise-button:disabled {
   border-color: #ababab;
+}
+
+.franchise-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.location-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .contacts__button-icon {
@@ -663,6 +670,7 @@ ul {
   margin-right: auto;
   width: calc(100% - 40px);
   margin-bottom: 16px;
+  transition: transform, box-shadow cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts__item:last-child {
   margin-bottom: 0px;
@@ -879,13 +887,10 @@ ul {
 }
 
 .contacts__location-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 196px;
-  height: 42px;
   margin-right: auto;
   margin-left: auto;
+  min-width: 196px;
+  height: 42px;
   border-radius: 10px;
   background-color: #f8d24e;
   border: none;
@@ -896,7 +901,7 @@ ul {
 }
 @media screen and (min-width: 768px) {
   .contacts__location-button {
-    margin: 0 16px 0 0;
+    margin-right: 16px;
   }
 }
 .contacts__location-button:hover {
@@ -912,13 +917,10 @@ ul {
 }
 
 .contacts__franchise-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 196px;
-  height: 42px;
   margin-right: auto;
   margin-left: auto;
+  min-width: 196px;
+  height: 42px;
   background-color: transparent;
   bottom: 2px;
   border-color: #f8d24e;
@@ -927,7 +929,7 @@ ul {
 }
 @media screen and (min-width: 768px) {
   .contacts__franchise-button {
-    margin: 0;
+    margin: 0px;
   }
 }
 .contacts__franchise-button:hover {
@@ -940,6 +942,18 @@ ul {
 }
 .contacts__franchise-button:disabled {
   border-color: #ababab;
+}
+
+.franchise-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.location-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .contacts__button-icon {
