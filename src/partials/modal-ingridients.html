@@ -1,6 +1,6 @@
 <div class="modal-ingedients">
 
-    <button type="button" class="modal-ingedients--close" data-modal-close="">
+    <button type="button" class="modal-ingedients--close close-modal" data-modal-close="">
                     <svg width="20" height="20">
                         <use href="./images/icons.svg#icon-close"></use>
                     </svg>
@@ -12,7 +12,7 @@
 
            <div class="modal-ingedients__circle">
         </div>
-        
+
     <picture class="cho-icecream-img">
         <source srcset="./images/cho-icecream_desk.png 1x,
         ./images/cho-icecream_desk-2x.png 2x,
@@ -35,6 +35,7 @@
     <section class="energy-value section">
         <h2 class="visually-hidden energy-value__name">Value</h2>
 
+       
        <ul class="energy-value__list list">
         <li class="energy-value__item">
            <div class="energy-value__container">
@@ -44,7 +45,6 @@
             </div>
                <p class="energy-value__elips-text">ckal</p>
             </div>
-
         </li>
 
         <li class="energy-value__item">
@@ -78,9 +78,12 @@
             </div>
     </li>
        </ul>
+    
     </section>
 
+    <section>
     <h3 class="cho-icecream-ingred">Ingredients</h3>
+    <div>
   <ul class="cho-icecream-ingred__list list">
     <li class="cho-icecream-ingred__item">
         <p class="cho-icecream-ingred__name">Milk</p>
@@ -99,11 +102,13 @@
         <p class="cho-icecream-ingred__name">Sugar</p>
         <p class="cho-icecream-ingred__value">40g</p>
     </li>
-    <li class="cho-icecream-ingred_item">
-        <p class="cho-icecream-ingred__name">Vanilla sugar</p>
+  <li class="cho-icecream-ingred__item">
+        <p class="cho-icecream-ingred__name">Vanilla Sugar</p>
         <p class="cho-icecream-ingred__value">10g</p>
     </li>
   </ul>
+  </div>
+  </section>
 
 <form class="modal-ingedients-form">
     <div class="modal-ingedients-form__group">
@@ -122,12 +127,12 @@
 
     <div class="modal-ingedients-form__group">
            <label>
-            <textarea name="comment" placeholder="Comment"
-            class="modal-ingedients-form__textarea">
-            </textarea>
+              <textarea name="comment" 
+              class="modal-ingedients-form__textarea"
+              placeholder="Comment"></textarea>
         </label>
     </div>
-   <button type="button" class="modal-ingedients__button button">Submit</button>
+   <button type="button" class="modal-ingedients__button submit-button button">Submit</button>
 
 </form>
 </div>
