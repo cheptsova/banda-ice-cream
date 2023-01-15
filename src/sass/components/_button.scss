@@ -160,7 +160,8 @@ button {
   border: 2px solid $accent-color;
 
   transition: border 500ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    color 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 500ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
     border: 2px solid $accent-bg-color;
@@ -169,6 +170,7 @@ button {
   &:focus {
     border: 2px solid $accent-bg-color;
     color: $white-color;
+    fill: $white-color;
   }
 
   &:disabled {
