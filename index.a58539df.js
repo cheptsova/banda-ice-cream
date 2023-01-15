@@ -1,0 +1,2 @@
+function modal(){var o="data-modal-open",e="is-hidden",a=[];document.querySelectorAll("[".concat(o,"]")).forEach((function(e){var t={opener:e,modal:document.getElementById(e.getAttribute(o))};t.modal&&(t.close=t.modal.querySelector("[".concat("data-modal-close","]")),a.push(t))})),a.forEach((function(o){o.opener.addEventListener("click",(function(){o.modal.classList.remove(e)})),o.close.addEventListener("click",(function(){o.modal.classList.contains(e)||o.modal.classList.add(e)}))}))}modal();
+//# sourceMappingURL=index.a58539df.js.map
