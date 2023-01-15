@@ -11,6 +11,13 @@
     }
 }
 
+#footer-scrolltop{
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+
 .footer-title {
     display: inline-flex;
     flex-direction: column;
