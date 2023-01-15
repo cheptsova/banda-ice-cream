@@ -3,23 +3,34 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-width: 90vw;
-  min-height: 991px;
-  height: 100%;
-  background-color: #fcfcfc;
+  max-width: 100%;
+  max-height: 100%;
+  
+  background-color: $primary-text-color;
   padding: 28px 28px 29px 28px;
 
-  @media screen and (min-width: 768px) {
-    width: 568px;
-    height: 644px;
+  @media screen and (min-width: 1200px) {
+    max-width: 568px;
+    max-height: 644px;
     padding: 32px 54px;
   }
 }
+
+
 .modal__cross {
   position: absolute;
-  top: 16px;
-  right: 16px;
+  top: 12px;
+  right: 12px;
+  width: 20px;
+  height: 20px;
+  @media screen and (min-width: 768px) {
+    width: 24px;
+    height: 24px;
+  }
 }
+
+
+
 
 .header-modal__title {
   margin-bottom: 83px;
@@ -233,9 +244,6 @@
   }
 }
 
-// .header-modal__input:not(:placeholder-shown):invalid {
-//     border-color: red;
-// }
 .header-modal__comment {
   resize: none;
   height: 65px;
