@@ -26,10 +26,25 @@
     padding-bottom: 32px;
   }
 }
+.close-modal {
+  @media screen and(min-width:1200px) {
+    width: 13px;
+    height: 13px;
+  }
+}
 .modal-locations__close {
   position: absolute;
   top: 12px;
   right: 12px;
+
+  border: none;
+  background-color: transparent;
+  width: 20px;
+  height: 20px;
+  @media screen and(min-width:1200px) {
+    width: 24px;
+    height: 24px;
+  }
 }
 .modal-locations__title {
   font-family: 'Seymour One';
@@ -64,8 +79,10 @@
   display: block;
   margin-bottom: 0;
   margin-top: 0;
+  border: transparent;
   & a {
     display: block;
+    color: inherit;
   }
   @media screen and(max-width:767px) {
     max-width: 134px;
