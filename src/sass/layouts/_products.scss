@@ -42,7 +42,7 @@
    text-align: center;
    letter-spacing: 0.04em;
    text-transform: uppercase;
-   color: #131313;
+   color: $tittle-text-color;
    
    margin-bottom: 40px;
 
@@ -65,7 +65,7 @@
        font-size: 18px;
        line-height: calc(21.94 / 18);
        text-transform: uppercase;
-       color: #131313;
+       color: $tittle-text-color;
        margin-bottom: 12px;
        margin-top: 60px;
 
@@ -373,7 +373,7 @@ box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
        }
    
    .products__milkshakes {
-   background-color: #D6936D;
+   background-color: $location-text-colour;
    }
    
   
@@ -385,7 +385,7 @@ box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
        line-height: calc(24 / 20);
        letter-spacing: 0.04em;
        text-transform: uppercase;
-       color: #131313;
+       color: $tittle-text-color;
        margin-top: 123px;
 
        @media screen and (min-width: 768px) {
@@ -406,7 +406,7 @@ box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
    font-size: 14px;
    text-align: center;
    letter-spacing: 0.04em;
-   color: #131313;
+   color: $tittle-text-color;
    margin-top: 40px;
    margin-right: auto;
    margin-left: auto;
@@ -430,6 +430,7 @@ box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
        @media screen and (min-width: 1200px) {
         width: 246px;
 height: 142px;
+margin-bottom: 50px;
        } 
    }
    .products__description-ice-coffee {
@@ -444,7 +445,7 @@ height: 142px;
        @media screen and (min-width: 1200px) {
         width: 242px;
         height: 142px;
-        margin-bottom: 75px;
+        margin-bottom: 50px;
        } 
    }
    .products__description-milkshakes {
