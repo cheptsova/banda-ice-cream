@@ -22,12 +22,12 @@
     padding-top: 16px;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: calc($tablet - 1px)) {
   .advantages__item {
     padding-top: 28px;
   }
 }
-@media screen and (min-width: 768px) {
+@include tablet {
   .advantages__list {
     display: flex;
     justify-content: space-around;
@@ -44,7 +44,7 @@
     font-size: 14px;
   }
 }
-@media screen and (min-width: 1200px) {
+@include desktop {
   .advantages__list {
     padding-bottom: 80px;
   }

@@ -1,7 +1,5 @@
-.about {
+.section__about {
     padding: 60px 20px 30px 20px;
-    text-align: center;
-
     @include tel {
         padding: 60px 100px 30px 100px;
     }
@@ -13,6 +11,10 @@
     @include desktop {
         padding: 60px 121px 30px 17px;
     }
+}
+
+.about {
+    text-align: center;
 }
 
 .about__wrap {
@@ -51,7 +53,6 @@
         min-height: 330px;
     }
 
-
     @include desktop {
         min-width: 490px;
         min-height: 490px;
@@ -73,7 +74,6 @@
         min-width: 490px;
         object-position: 0px 0px;
     }
-
 }
 
 .image-wrap img {
@@ -83,7 +83,6 @@
 .about__label {
     margin-bottom: 12px;
 
-    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -113,7 +112,7 @@
 }
 
 .about__label-tab {
-    @media screen and (max-width: 479px) {
+    @media screen and (max-width: calc($tel - 1px)) {
         display: none;
     }
 
