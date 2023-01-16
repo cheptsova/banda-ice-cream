@@ -5,4 +5,15 @@ $('.one-time').slick({
   slidesToShow: 1,
   adaptiveHeight: true,
   arrows: false,
+  autoplay: true,
+});
+
+$('.gallery-slaid').slick({
+  dots: false,
+  infinite: true,
+  speed: 200,
+  slidesToShow: 1,
+  adaptiveHeight: true,
+  arrows: false,
+  autoplay: true,
 });
