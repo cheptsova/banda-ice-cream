@@ -1,0 +1,2 @@
+function scrollFunction(){var o=document.getElementById("footer-scrolltop");document.body.scrollTop>20||document.documentElement.scrollTop>20?(o.style.opacity="1",o.style.transform="translateY(0px)"):(o.style.opacity="0",o.style.transform="translateY(20px)")}function topFunction(){$("html, body").animate({scrollTop:0},"slow")}window.onscroll=function(){scrollFunction()},document.getElementById("footer-scrolltop").addEventListener("click",topFunction);
+//# sourceMappingURL=index.5f8580bd.js.map
