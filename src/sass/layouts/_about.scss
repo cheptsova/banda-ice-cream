@@ -1,237 +1,252 @@
 .section__about {
-    padding: 60px 20px 30px 20px;
-    @include tel {
-        padding: 60px 100px 30px 100px;
-    }
+  padding-top: 60px;
+  padding-bottom: 30px;
 
-    @include tablet {
-        padding: 60px 34px 30px 34px;
-    }
+  @media screen and (max-width: calc($tel - 1px)) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
-    @include desktop {
-        padding: 60px 121px 30px 17px;
-    }
+  @media screen and (min-width: calc($tel)) and (max-width: calc($tablet - 1px)) {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  @include tablet {
+    padding-left: 32px;
+  }
+
+  @include desktop {
+    padding-left: 16px;
+  }
 }
 
 .about {
-    text-align: center;
+  text-align: center;
 }
 
 .about__wrap {
-    position: relative;
+  position: relative;
+  flex-direction: column;
+  // justify-content: center;
+  text-align: center;
+  // gap: 40px;
+
+  @include tablet {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    gap: 40px;
+    flex-direction: row;
+    // gap: 38px;
+  }
 
-    @include tablet {
-        flex-direction: row;
-        gap: 38px;
-    }
-
-    @include desktop {
-        gap: 109px;
-        align-items: center;
-    }
+  @include desktop {
+    // gap: 109px;
+    align-items: center;
+  }
 }
 
 .image-wrap {
-    display: block;
-    max-width: 280px;
-    max-height: 280px;
+  display: block;
+  max-width: 280px;
+  max-height: 280px;
+  // margin: 0 auto;
+  background-color: $accent-color;
+  background: linear-gradient(
+      0deg,
+      rgba(248, 210, 78, 0.7),
+      rgba(248, 210, 78, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
+  border-radius: 50%;
 
-    margin: 0 auto;
+  @include tablet {
+    margin-right: 38px;
 
-    background-color: $accent-color;
-    background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
-    box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
-    border-radius: 50%;
+    max-width: 330px;
+    min-height: 330px;
+  }
 
-    @include tablet {
-        max-width: 330px;
-        min-height: 330px;
-    }
+  @include desktop {
+    margin-right: 109px;
 
-    @include desktop {
-        min-width: 490px;
-        min-height: 490px;
-    }
+    min-width: 490px;
+    min-height: 490px;
+  }
 }
 
 .about__image {
-    max-width: 280px;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 
-    border-radius: 50%;
-    box-shadow: 0px 5.30813px 19.9055px rgba(153, 114, 23, 0.25);
+  border-radius: 50%;
+  box-shadow: 0px 5.30813px 19.9055px rgba(153, 114, 23, 0.25);
 
-    @include tablet {
-        min-width: 330px;
-    }
+  @include tablet {
+    min-width: 330px;
+  }
 
-    @include desktop {
-        min-width: 490px;
-        object-position: 0px 0px;
-    }
+  @include desktop {
+    min-width: 490px;
+    object-position: 0px 0px;
+  }
 }
 
 .image-wrap img {
-    transform: translateY(10%);
+  transform: translateY(10%);
 }
 
 .about__label {
-    margin-bottom: 12px;
+  margin-bottom: 12px;
 
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: calc(22/18);
-    text-transform: uppercase;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(22 / 18);
+  text-transform: uppercase;
 }
 
 .about__label-mob {
+  display: block;
+
+  @include tel {
+    display: none;
+  }
+
+  @include tablet {
     display: block;
+    font-weight: 800;
+    font-size: 22px;
+    line-height: calc(27 / 22);
+    letter-spacing: 0.04em;
+  }
 
-    @include tel {
-        display: none;
-    }
-
-    @include tablet {
-        display: block;
-        font-weight: 800;
-        font-size: 22px;
-        line-height: calc(27/22);
-        letter-spacing: 0.04em;
-    }
-
-    @include desktop {
-        font-size: 30px;
-        line-height: calc(37/30);
-    }
+  @include desktop {
+    font-size: 30px;
+    line-height: calc(37 / 30);
+  }
 }
 
 .about__label-tab {
-    @media screen and (max-width: calc($tel - 1px)) {
-        display: none;
-    }
+  @media screen and (max-width: calc($tel - 1px)) {
+    display: none;
+  }
 
-    @include tel {
-        display: block;
-        margin-bottom: 54px;
-    }
+  @include tel {
+    display: block;
+    margin-bottom: 54px;
+  }
 
-    @include tablet {
-        display: none;
-    }
+  @include tablet {
+    display: none;
+  }
 }
 
 .about__title {
-    max-width: 200px;
-    margin: 0 auto;
-    margin-bottom: 54px;
+  max-width: 200px;
+  margin: 0 auto;
+  margin-bottom: 54px;
 
-    font-family: 'Seymour One';
-    font-size: 30px;
-    line-height: calc(38/30);
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
+  font-family: 'Seymour One';
+  font-size: 30px;
+  line-height: calc(38 / 30);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 
-    @include tel {
-        margin-bottom: 12px;
-    }
+  @include tel {
+    margin-bottom: 12px;
+  }
 
-    @include tablet {
-        min-width: 100%;
-        margin-bottom: 80px;
-    }
+  @include tablet {
+    min-width: 100%;
+    margin-bottom: 80px;
+  }
 
-    @include desktop {
-        margin-bottom: 121px;
+  @include desktop {
+    margin-bottom: 121px;
 
-        font-size: 36px;
-        line-height: calc(45/36);
-        letter-spacing: 0.06em;
-    }
+    font-size: 36px;
+    line-height: calc(45 / 36);
+    letter-spacing: 0.06em;
+  }
 }
 
 .about__text {
-    margin: 0 auto;
-    margin-bottom: 10px;
-    max-width: 220px;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  max-width: 220px;
 
-    font-size: 12px;
+  font-size: 12px;
 
-    @include tablet {
-        max-width: 336px;
-        margin-left: 0px;
-        text-align: left;
-    }
+  @include tablet {
+    max-width: 336px;
+    margin-left: 0px;
+    text-align: left;
+  }
 
-    @include desktop {
-        max-width: 463px;
-    }
+  @include desktop {
+    max-width: 463px;
+  }
 }
 
 .text__first {
-    margin-bottom: 4px;
+  margin-bottom: 4px;
 
-    line-height: 1.76;
-    letter-spacing: 0.04em;
+  line-height: 1.76;
+  letter-spacing: 0.04em;
 
-    @include tablet {
-        margin-bottom: 8px;
-    }
+  @include tablet {
+    margin-bottom: 8px;
+  }
 
-    @include desktop {
-        font-size: 16px;
-    }
+  @include desktop {
+    font-size: 16px;
+  }
 }
 
 .text__second {
-    margin-bottom: 24px;
+  margin-bottom: 24px;
 
-    line-height: 1.62;
+  line-height: 1.62;
 
-    @include tablet {
-        margin-bottom: 8px;
-        line-height: 1.76;
-    }
+  @include tablet {
+    margin-bottom: 8px;
+    line-height: 1.76;
+  }
 
-    @include desktop {
-        font-size: 14px;
-        line-height: 1.94;
-    }
+  @include desktop {
+    font-size: 14px;
+    line-height: 1.94;
+  }
 }
 
 .text__hidden-mobile {
-    display: none;
+  display: none;
 
-    @include tablet {
-        display: block;
-        margin-bottom: 32px;
+  @include tablet {
+    display: block;
+    margin-bottom: 32px;
 
-        line-height: 1.94;
-    }
+    line-height: 1.94;
+  }
 
-    @include desktop {
-        font-size: 14px;
-    }
+  @include desktop {
+    font-size: 14px;
+  }
 }
 
 .about__button {
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
 
-    @include tablet {
+  @include tablet {
     margin: 0;
-    }
+  }
 }
 
 .button-icon {
-    display: block;
-    margin-left: 4px;
+  display: block;
+  margin-left: 4px;
 }
