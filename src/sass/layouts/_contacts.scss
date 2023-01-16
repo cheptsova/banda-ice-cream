@@ -1,5 +1,5 @@
 .contacts {
-  padding-bottom: 60px;
+  padding-bottom: 180px;
   background-color: $primary-bg-color;
 
   @include tablet {
@@ -29,13 +29,21 @@
 }
 
 .contacts__list {
-  margin-bottom: 60px;
+  margin-bottom: 20px;
+
+  @include tel {
+    margin-bottom: 24px;
+  }
 
   @include tablet {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 40px;
+  }
+
+  @include desktop {
+    margin-bottom: 60px;
   }
 }
 
