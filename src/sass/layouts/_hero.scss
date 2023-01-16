@@ -3,16 +3,16 @@
   height: 450px;
   padding-top: 50px;
 
-  @media screen and (min-width: 480px) {
+  @include tel {
     padding-top: 40px;
   }
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     height: 349px;
     padding-top: 14px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     height: 636px;
     padding-top: 45px;
   }
@@ -31,9 +31,8 @@
   line-height: 1.26;
   letter-spacing: 0.04em;
   max-width: 247px;
-  // margin-right: auto;
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     font-size: 38px;
     line-height: 1.2;
     max-width: 347px;
@@ -43,31 +42,29 @@
 .hero-list__numbers {
   display: none;
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     display: flex;
     flex-direction: column;
     padding-top: 10px;
     text-align: right;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     padding-top: 8px;
   }
 }
 
-.hero-list__numbers .hero-list__item + .hero-list__item {
-  @media screen and (min-width: 768px) {
+.hero-list__numbers .hero-list__item+.hero-list__item {
+  @include tablet {
     margin-top: 20px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     margin-top: 16px;
   }
 }
 
-.hero-list__item > span {
-  font-family: 'Montserrat';
-  font-style: normal;
+.hero-list__item>span {
   font-weight: 900;
   font-size: 28px;
   line-height: 1.2;
@@ -76,14 +73,12 @@
 
   color: $tittle-text-color;
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     font-size: 46px;
   }
 }
 
 .hero-list__paragraph {
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 400;
   font-size: 8px;
   line-height: 1.25;
@@ -92,7 +87,7 @@
 
   color: $white-color;
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     font-size: 14px;
     line-height: 1.2;
   }
@@ -101,11 +96,11 @@
 .hero__container--left {
   padding-top: 32px;
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     padding-top: 0;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     padding-top: 28px;
   }
 }
@@ -125,6 +120,7 @@
 
 .hero__howit-link {
   color: $accent-color;
+
   &::after {
     position: absolute;
     bottom: -1px;
@@ -144,53 +140,35 @@
   text-align: center;
   text-decoration-line: none;
 
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.2;
   color: $accent-color;
-  
+
 }
 
 .hero__container--bottom {
   display: none;
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     display: flex;
     position: relative;
   }
 }
 
-// .hero-bottom{
-//     display: flex;
-//    position: absolute;
-//    flex-direction: column;
-//     align-items: center;
-
-// @media screen and (min-width:768px) {
-//         padding-top: 12px;
-// }
-
-// @media screen and (min-width:1200px) {
-//     padding-top: 42px;
-
-// }
-// }
-
 .hero-bottom__img {
   margin-left: 0;
   display: none;
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     display: flex;
     position: absolute;
-  
+
 
     top: 187px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     top: 347px;
   }
 }
@@ -198,22 +176,20 @@
 .hero-bottom__paragraph {
   display: none;
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     display: block;
     position: absolute;
 
     top: 210px;
     left: 223px;
     width: 139px;
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.2;
     color: $primary-text-color;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     width: 200px;
     font-size: 14px;
     line-height: 1.42;
@@ -228,11 +204,11 @@
   bottom: 0;
   fill: $white-color;
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     margin-top: 12px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     margin-top: 24px;
   }
 }
@@ -242,20 +218,20 @@
   bottom: 0;
   z-index: -1;
 
-  @media screen and (max-width: 479px) {
+  @media screen and (max-width: calc($tel - 1px)) {
     left: 0;
   }
 
-  @media screen and (min-width: 480px) and (max-width: 767px) {
+  @media screen and (min-width: $tel) and (max-width: calc($tablet - 1px)) {
     right: 0;
   }
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     width: 100%;
     left: 0;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     bottom: 0;
   }
 }
@@ -265,15 +241,15 @@
   bottom: 0;
   left: 93px;
 
-  @media screen and (min-width: 480px) {
+  @include tel {
     left: 243px;
   }
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     left: 408px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     left: 652px;
     bottom: 0;
   }
