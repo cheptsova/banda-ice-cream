@@ -1,10 +1,10 @@
 .contacts {
-  padding-bottom: 60px;
+  padding-bottom: 180px;
   background-color: $primary-bg-color;
-  @media screen and(min-width:768px) {
+  @include tablet {
     padding-bottom: 40px;
   }
-  @media screen and(min-width:1200px) {
+  @include desktop {
     padding-bottom: 120px;
   }
 }
@@ -25,13 +25,21 @@
   }
 }
 .contacts__list {
-  margin-bottom: 60px;
+  margin-bottom: 20px;
+
+  @include tel {
+    margin-bottom: 24px;
+  }
 
   @media screen and(min-width:768px) {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 40px;
+  }
+
+  @include desktop {
+    margin-bottom: 60px;
   }
 }
 .contacts__item {
