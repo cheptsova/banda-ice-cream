@@ -2,15 +2,15 @@
     padding: 60px 20px 30px 20px;
     text-align: center;
 
-    @media screen and (min-width: 480px) {
+    @include tel {
         padding: 60px 100px 30px 100px;
     }
 
-    @media screen and (min-width: 768px) {
+    @include tablet {
         padding: 60px 34px 30px 34px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @include desktop {
         padding: 60px 121px 30px 17px;
     }
 }
@@ -23,12 +23,12 @@
     text-align: center;
     gap: 40px;
 
-    @media screen and (min-width: 768px) {
+    @include tablet {
         flex-direction: row;
         gap: 38px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @include desktop {
         gap: 109px;
         align-items: center;
     }
@@ -46,13 +46,13 @@
     box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
     border-radius: 50%;
 
-    @media screen and (min-width: 768px) {
+    @include tablet {
         max-width: 330px;
         min-height: 330px;
     }
 
 
-    @media screen and (min-width: 1200px) {
+    @include desktop {
         min-width: 490px;
         min-height: 490px;
     }
@@ -65,11 +65,11 @@
     border-radius: 50%;
     box-shadow: 0px 5.30813px 19.9055px rgba(153, 114, 23, 0.25);
 
-    @media screen and (min-width: 768px) {
+    @include tablet {
         min-width: 330px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @include desktop {
         min-width: 490px;
         object-position: 0px 0px;
     }
@@ -94,11 +94,11 @@
 .about__label-mob {
     display: block;
 
-    @media screen and (min-width: 480px) {
+    @include tel {
         display: none;
     }
 
-    @media screen and (min-width: 768px) {
+    @include tablet {
         display: block;
         font-weight: 800;
         font-size: 22px;
@@ -106,7 +106,7 @@
         letter-spacing: 0.04em;
     }
 
-    @media screen and (min-width: 1200px) {
+    @include desktop {
         font-size: 30px;
         line-height: calc(37/30);
     }
@@ -117,12 +117,12 @@
         display: none;
     }
 
-    @media screen and (min-width: 480px) {
+    @include tel {
         display: block;
         margin-bottom: 54px;
     }
 
-    @media screen and (min-width: 768px) {
+    @include tablet {
         display: none;
     }
 }
@@ -138,16 +138,16 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
 
-    @media screen and (min-width: 480px) {
+    @include tel {
         margin-bottom: 12px;
     }
 
-    @media screen and (min-width: 768px) {
+    @include tablet {
         min-width: 100%;
         margin-bottom: 80px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @include desktop {
         margin-bottom: 121px;
 
         font-size: 36px;
@@ -163,13 +163,13 @@
 
     font-size: 12px;
 
-    @media screen and (min-width: 768px) {
+    @include tablet {
         max-width: 336px;
         margin-left: 0px;
         text-align: left;
     }
 
-    @media screen and (min-width: 1200px) {
+    @include desktop {
         max-width: 463px;
     }
 }
@@ -180,11 +180,11 @@
     line-height: 1.76;
     letter-spacing: 0.04em;
 
-    @media screen and (min-width: 768px) {
+    @include tablet {
         margin-bottom: 8px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @include desktop {
         font-size: 16px;
     }
 }
@@ -194,12 +194,12 @@
 
     line-height: 1.62;
 
-    @media screen and (min-width: 768px) {
+    @include tablet {
         margin-bottom: 8px;
         line-height: 1.76;
     }
 
-    @media screen and (min-width: 1200px) {
+    @include desktop {
         font-size: 14px;
         line-height: 1.94;
     }
@@ -208,24 +208,28 @@
 .text__hidden-mobile {
     display: none;
 
-    @media screen and (min-width: 768px) {
+    @include tablet {
         display: block;
         margin-bottom: 32px;
 
         line-height: 1.94;
     }
 
-    @media screen and (min-width: 1200px) {
+    @include desktop {
         font-size: 14px;
     }
 }
 
 .about__button {
+    
     display: flex;
     align-items: center;
     justify-content: center;
-
     margin: 0 auto;
+
+    @include tablet {
+    margin: 0;
+    }
 }
 
 .button-icon {

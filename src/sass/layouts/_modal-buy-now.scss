@@ -3,22 +3,18 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-width: 90vw;
-  min-height: 991px;
-  height: 100%;
-  background-color: #fcfcfc;
+  max-width: 100%;
+  max-height: 100%;
+  
+
+  background-color: $primary-text-color;
   padding: 28px 28px 29px 28px;
 
-  @media screen and (min-width: 768px) {
-    width: 568px;
-    height: 644px;
+  @include desktop {
+    max-width: 568px;
+    max-height: 644px;
     padding: 32px 54px;
   }
-}
-.modal__cross {
-  position: absolute;
-  top: 16px;
-  right: 16px;
 }
 
 .header-modal__title {
@@ -37,7 +33,8 @@
   align-items: center;
   gap: 82px;
   margin-bottom: 31px;
-  @media screen and (min-width: 786px) {
+
+  @include tablet {
     justify-content: center;
     flex-direction: row;
     gap: 32px;
@@ -68,15 +65,15 @@
   position: absolute;
 }
 
-.header-modal__checkbox:checked + .icecream {
+.header-modal__checkbox:checked+.icecream {
   background-color: #aec6a5;
 }
 
-.header-modal__checkbox:checked + .icecoffe {
+.header-modal__checkbox:checked+.icecoffe {
   background-color: #efd478;
 }
 
-.header-modal__checkbox:checked + .milkshake {
+.header-modal__checkbox:checked+.milkshake {
   background-color: #d6936d;
 }
 
@@ -94,11 +91,9 @@
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 50%;
-  background: linear-gradient(
-      0deg,
+  background: linear-gradient(0deg,
       rgba(156, 190, 143, 0.7),
-      rgba(156, 190, 143, 0.7)
-    ),
+      rgba(156, 190, 143, 0.7)),
     #d9d9d9;
   box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
 }
@@ -117,8 +112,8 @@
   background-image: url(../images/ice-cream_mob.png);
 
   @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
     background-image: url(../images/ice-cream_mob-2x.png);
     background-position: center;
     background-size: cover;
@@ -128,6 +123,7 @@
 .icecoffe {
   border-color: #efd478;
 }
+
 .icecoffe::before {
   content: '';
   position: absolute;
@@ -138,11 +134,9 @@
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 50%;
-  background: linear-gradient(
-      0deg,
+  background: linear-gradient(0deg,
       rgba(248, 210, 78, 0.7),
-      rgba(248, 210, 78, 0.7)
-    ),
+      rgba(248, 210, 78, 0.7)),
     #d9d9d9;
   box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
 }
@@ -158,17 +152,20 @@
   transform: translate(-50%, -50%);
   border-radius: 50%;
   background-image: url(../images/ice-coffee_mob.png);
+
   @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
     background-image: url(../images/ice-coffee_mob-2x.png);
     background-position: center;
     background-size: cover;
   }
 }
+
 .milkshake {
   border-color: $location-text-colour;
 }
+
 .milkshake::before {
   content: '';
   position: absolute;
@@ -179,11 +176,9 @@
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 50%;
-  background: linear-gradient(
-      0deg,
+  background: linear-gradient(0deg,
       rgba(213, 117, 63, 0.7),
-      rgba(213, 117, 63, 0.7)
-    ),
+      rgba(213, 117, 63, 0.7)),
     #d9d9d9;
   box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
 }
@@ -202,13 +197,14 @@
   background-image: url(../images/milkshakes_mob.png);
 
   @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
     background-image: url(../images/milkshakes_mob-2x.png);
     background-position: center;
     background-size: cover;
   }
 }
+
 .header-modal__input {
   display: flex;
   margin-right: auto;
@@ -227,21 +223,18 @@
   text-align: left;
   color: $tittle-text-color;
 
-  @media screen and (min-width: 786px) {
+  @include tablet {
     width: 368px;
     height: 42px;
   }
 }
 
-// .header-modal__input:not(:placeholder-shown):invalid {
-//     border-color: red;
-// }
 .header-modal__comment {
   resize: none;
   height: 65px;
   margin-bottom: 26px;
 
-  @media screen and (min-width: 786px) {
+  @include tablet {
     height: 84px;
   }
 }

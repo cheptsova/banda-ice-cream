@@ -50,7 +50,7 @@ button {
   }
 }
 
-.hero__howit:enabled {
+.hero__howit {
   min-width: 106px;
   border: none;
   border-radius: none;
@@ -205,6 +205,19 @@ button {
 
 /* ---------кнопка закриття модалки--------- */
 .close-modal {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 20px;
+  height: 20px;
+
+  border: none;
+
+  @include tablet {
+    width: 24px;
+    height: 24px;
+  }
+
   width: 11px;
   height: 11px;
   border: none;
@@ -214,6 +227,15 @@ button {
   &:hover,
   &:focus {
     fill: $accent-bg-color;
+  }
+}
+
+.icons-close {
+  width: 11px;
+  height: 11px;
+  @include tablet {
+    width: 13px;
+    height: 13px;
   }
 }
 

@@ -1,10 +1,8 @@
 .modal-locations {
   position: fixed;
   padding: 28px;
-  width: 58vw;
-  @media screen and(max-width:767px) {
-    min-height: 365px;
-  }
+  max-width: 90vw;
+  max-height: 100vh;
 
   background-color: $primary-text-color;
   border: 2px solid $accent-color;
@@ -13,11 +11,11 @@
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
 
-  @media screen and(min-width:768px) {
+  @include tablet {
     width: 280px;
     min-height: 365px;
   }
-  @media screen and(min-width:1200px) {
+  @include desktop {
     width: 568px;
     height: 458px;
     padding-left: 60px;
@@ -26,26 +24,7 @@
     padding-bottom: 32px;
   }
 }
-.close-modal {
-  @media screen and(min-width:1200px) {
-    width: 13px;
-    height: 13px;
-  }
-}
-.modal-locations__close {
-  position: absolute;
-  top: 12px;
-  right: 12px;
 
-  border: none;
-  background-color: transparent;
-  width: 20px;
-  height: 20px;
-  @media screen and(min-width:1200px) {
-    width: 24px;
-    height: 24px;
-  }
-}
 .modal-locations__title {
   font-family: 'Seymour One';
   font-weight: 400;
@@ -55,7 +34,8 @@
   margin-bottom: 20px;
 
   color: $tittle-text-color;
-  @media screen and(min-width:1200px) {
+
+  @include desktop {
     margin-bottom: 32px;
     font-size: 20px;
   }
@@ -69,7 +49,7 @@
   border-radius: 10px;
   margin-bottom: 24px;
 
-  @media screen and(min-width:1200px) {
+  @include desktop {
     height: 260px;
   }
 }
@@ -88,11 +68,11 @@
     max-width: 134px;
     max-height: 42px;
   }
-  @media screen and(min-width:768px) {
+  @include tablet {
     width: 134px;
     height: 42px;
   }
-  @media screen and(min-width:1200px) {
+  @include desktop {
     width: 145px;
     height: 42px;
   }
