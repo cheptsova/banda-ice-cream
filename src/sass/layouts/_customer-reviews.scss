@@ -5,18 +5,18 @@
   @media screen and (max-width: 767px) {
     background-image: url(../images/bg_mobile.png);
     width: 100%;
-    padding-bottom: 40px;
+    padding-bottom: 380px;
   }
 
   @media screen and (min-width: 768px) {
     background-image: url(../images/bg_tablet.png);
-    padding-bottom: 60px;
+    padding-bottom: 335px;
     width: 100%;
   }
 
   @media screen and (min-width: 1200px) {
     background-image: url(../images/bg_desktop.png);
-    padding-bottom: 100px;
+    padding-bottom: 200px;
     width: 100%;
   }
 }

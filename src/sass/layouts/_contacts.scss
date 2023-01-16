@@ -8,6 +8,22 @@
     padding-bottom: 120px;
   }
 }
+
+.contacts-block {
+  position: relative;
+  max-height: 1081px;
+  transform: translateY(-349px);
+  z-index: 1;
+  @media screen and(min-width:768px) {
+    max-height: 333px;
+    transform: translateY(-299px);
+  }
+
+  @media screen and(min-width:1200px) {
+    max-height: 530px;
+    transform: translateY(-119px);
+  }
+}
 .contacts__list {
   margin-bottom: 60px;
 
@@ -30,6 +46,7 @@
   width: calc(100% - 20px * 2);
   margin-bottom: 16px;
   transition: transform, box-shadow $timing-function;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
 
   &:last-child {
     margin-bottom: 0px;
@@ -217,12 +234,7 @@
 .contacts__location-button {
   margin-right: auto;
   margin-left: auto;
-  min-width: 196px;
-  height: 42px;
-  border-radius: 10px;
-  background-color: $accent-color;
-  border: none;
-  color: $accent-text-color;
+
   font-weight: 600;
   font-size: 14px;
   line-height: 1.28;
@@ -230,14 +242,7 @@
   @media screen and(min-width:768px) {
     margin-right: 16px;
   }
-  &:hover {
-    background-color: $accent-bg-color;
-  }
-  &:focus {
-    background-color: $accent-bg-color;
-    color: $primary-text-color;
-    fill: $primary-text-color;
-  }
+
   &:disabled {
     background-color: #ababab;
   }
@@ -245,25 +250,11 @@
 .contacts__franchise-button {
   margin-right: auto;
   margin-left: auto;
-  min-width: 196px;
-  height: 42px;
-  background-color: transparent;
 
-  border-color: $accent-color;
-  border-radius: 10px;
-  border-style: solid;
   @media screen and(min-width:768px) {
     margin: 0px;
   }
 
-  &:hover {
-    border-color: $accent-bg-color;
-  }
-  &:focus {
-    border-color: $accent-bg-color;
-    color: $primary-text-color;
-    fill: $primary-text-color;
-  }
   &:disabled {
     border-color: #ababab;
   }
