@@ -1,10 +1,20 @@
-<div data-modal class="backdrop is-hidden">
+<div class="backdrop-franchise is-hidden" data-modal id="modal-franchise">
   <div class="modal">
-    <button data-modal-close type="button" class="modal__cross button-close">
-      <svg class="modal-btn-close" width="24" height="24">
-        <use href="./images/icons.svg#icon-close"></use>
+    <button data-modal-close type="button" class="modal-ingedients--close close-modal" >
+      <svg class="icons-close" width="11" height="11">
+          <use href="./images/icons.svg#icon-close"></use>
       </svg>
-    </button>
+  </button>
+
+  <p class="modal-form-tittle">
+    Thank you for your interest in owning an Ice Cream shop
+  </p>
+    <p class="modal-form-subtittle">
+      Due to the overwhelming volume of franchise requests we are not accepting new 
+      franchisee applications at this time. Once the application process resumes, we will 
+      contact you for further information. Please fill out the contact information below and 
+      we will reach out for additional information. We appreciate your patience.
+    </p>
     <form class="contacts-modal__form">
       <input
         type="text"
@@ -12,6 +22,7 @@
         placeholder="Name"
         pattern="[a-zA-Z]+"
         title="Name"
+        required
       />
       <input
         class="contacts-modal__input"

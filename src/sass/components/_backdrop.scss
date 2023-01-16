@@ -1,12 +1,19 @@
-.backdrop-ingedients, .backdrop-header {
+.backdrop-ingedients, 
+.backdrop-header, 
+.backdrop-franchise,
+.backdrop-location {
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
 
     background-color: rgba(156, 190, 143, 0.5);
+
+    transition: all 0.8s ease 0s;
 
     &.is-hidden {
         opacity: 0;
