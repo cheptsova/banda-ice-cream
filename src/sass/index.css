@@ -1879,6 +1879,7 @@ button {
 }
 .contacts__address p {
   margin-bottom: 8px;
+  font-style: normal;
   color: #131313;
   font-weight: 500;
   font-size: 12px;
@@ -3161,6 +3162,7 @@ iframe {
 }
 .contacts__address p {
   margin-bottom: 8px;
+  font-style: normal;
   color: #131313;
   font-weight: 500;
   font-size: 12px;
