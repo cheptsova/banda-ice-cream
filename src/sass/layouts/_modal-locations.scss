@@ -53,10 +53,10 @@
   display: block;
   margin-bottom: 0;
   margin-top: 0;
-  color: $tittle-text-color;
 
   & a {
     display: block;
+    color: $tittle-text-color;
   }
 
   @include tablet {

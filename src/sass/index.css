@@ -2792,10 +2792,10 @@ button {
   display: block;
   margin-bottom: 0;
   margin-top: 0;
-  color: #131313;
 }
 .modal-locations__button a {
   display: block;
+  color: #131313;
 }
 @media screen and (min-width: 768px) {
   .modal-locations__button {
