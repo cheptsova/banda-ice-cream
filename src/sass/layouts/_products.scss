@@ -1,4 +1,4 @@
-.products__container {
+.products {
   padding-top: 60px;
   padding-bottom: 60px;
   text-align: center;
@@ -29,6 +29,7 @@
   }
 }
 
+
 .products__tittle {
   margin-bottom: 40px;
 
@@ -52,9 +53,8 @@
   }
 }
 
-.products__label {
+.products__quality {
   margin-bottom: 12px;
-  margin-top: 60px;
 
   font-weight: 800;
   font-size: 18px;
@@ -65,13 +65,11 @@
   @include tablet {
     font-size: 22px;
     line-height: calc(26.82 / 22);
-    margin-top: 84px;
   }
 
   @include desktop {
     font-size: 30px;
     line-height: calc(36.57 / 30);
-    margin-top: 80px;
   }
 }
 
@@ -381,6 +379,7 @@
     padding-top: 165px;
     flex-basis: calc(100% - (29px*3)/3);
     max-width: 370px;
+    height: 536px;
   }
 }
 
