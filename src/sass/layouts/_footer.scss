@@ -11,6 +11,21 @@
     }
 }
 
+#footer-scrolltop {
+    // display: none;
+    opacity: 0;
+    position: fixed;
+    color: $accent-text-color;
+    background-color: $accent-color;
+    transition: transform 250ms, opacity 250ms;
+    padding: 15px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    bottom: 50px;
+    right: 50px;
+}
+
 .footer-title {
     display: inline-flex;
     flex-direction: column;
