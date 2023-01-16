@@ -1,9 +1,5 @@
 .modal-locations {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  
+  position: fixed;
   padding: 28px;
   max-width: 90vw;
   max-height: 100vh;
@@ -11,10 +7,21 @@
   background-color: $primary-text-color;
   border: 2px solid $accent-color;
   border-radius: 10px;
-  
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+
   @include tablet {
-    padding: 32px;
-    max-width: 568px;
+    width: 280px;
+    min-height: 365px;
+  }
+  @include desktop {
+    width: 568px;
+    height: 458px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 
@@ -52,11 +59,16 @@
   display: block;
   margin-bottom: 0;
   margin-top: 0;
+  border: transparent;
   & a {
     display: block;
+    color: inherit;
   }
-
-@include tablet {
+  @media screen and(max-width:767px) {
+    max-width: 134px;
+    max-height: 42px;
+  }
+  @include tablet {
     width: 134px;
     height: 42px;
   }
