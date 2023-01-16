@@ -114,21 +114,30 @@
 <form class="modal-ingedients-form">
     <div class="modal-ingedients-form__group">
         <label class="modal-ingedients-form__label">
-            <input type="name" name="name" placeholder="Name"
-            class="modal-ingedients-form__input" required/>
+            <input type="text"
+            class="modal-ingedients-form__input"
+            placeholder="Name"
+             pattern="[a-zA-Z]+"
+             title="Name"
+             required/>
         </label>
 
     </div>
     <div class="modal-ingedients-form__group">
         <label>
-            <input type="phone" name="phone" placeholder="Phone"
-            class="modal-ingedients-form__input" required/>
+            <input class="modal-ingedients-form__input"
+            type="tel"
+        name="phone number"
+        placeholder="+380 (__) ___-__-__"
+        data-slots="_"
+        title="+380 (00) 000-00-00"
+        required/>
         </label>
     </div>
 
     <div class="modal-ingedients-form__group">
            <label>
-              <textarea name="comment" 
+              <textarea name="Comment" 
               class="modal-ingedients-form__textarea"
               placeholder="Comment"></textarea>
         </label>
