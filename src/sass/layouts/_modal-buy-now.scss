@@ -3,8 +3,11 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-width: 100%;
-   max-height: 991px;
+  max-width: 280px;
+ 
+   z-index: 2;
+
+
 
 
   background-color: $primary-text-color;
@@ -27,12 +30,17 @@
   color: $tittle-text-color;
 }
 
+.header-modal__form {
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+}
+
 .header-modal__list {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 82px;
-  margin-bottom: 31px;
 
   @include tablet {
     justify-content: center;
@@ -52,7 +60,6 @@
   border: solid 2px;
   border-radius: 10px;
   color: $tittle-text-color;
-  font-family: 'Montserrat';
   font-size: 16px;
   line-height: 1.25;
   font-style: bold;
