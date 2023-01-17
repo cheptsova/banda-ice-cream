@@ -31,6 +31,7 @@
   line-height: 1.26;
   letter-spacing: 0.04em;
   max-width: 247px;
+  text-transform: uppercase;
 
   @include desktop {
     font-size: 38px;
@@ -94,14 +95,14 @@
 }
 
 .hero__container--left {
-  padding-top: 32px;
+  margin-top: 32px;
 
   @include tablet {
-    padding-top: 0;
+    margin-top: 0;
   }
 
   @include desktop {
-    padding-top: 28px;
+    margin-top: 28px;
   }
 }
 

@@ -56,6 +56,7 @@
 
   & a {
     display: block;
+    color: $tittle-text-color;
   }
 
   @include tablet {
