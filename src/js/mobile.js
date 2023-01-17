@@ -10,8 +10,8 @@
     mobileMenu.classList.toggle('is-open');
 
     const scrollLockMethod = !isMenuOpen
-      ? 'disableBodyScroll'
-      : 'enableBodyScroll';
+      ?'disableBodyScroll'
+      :'enableBodyScroll';
     bodyScrollLock[scrollLockMethod](document.body);
   };
 
