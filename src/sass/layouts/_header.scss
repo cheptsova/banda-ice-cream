@@ -4,15 +4,15 @@
   justify-content: space-between;
   padding-top: 12px;
 
-  @media screen and (min-width: 480px) {
+  @include tel {
     padding-top: 14px;
   }
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     padding-top: 20px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     justify-content: space-between;
     padding-top: 0;
   }
@@ -21,7 +21,7 @@
 .page-header__nav {
   display: none;
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     display: flex;
   }
 }
@@ -48,12 +48,10 @@
 }
 
 .marginbtn {
-  @media screen and (max-width: 767px) {
-    margin-right: auto;
-    margin-left: auto;
-  }
+  margin-right: auto;
+  margin-left: auto;
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     display: none;
   }
 }
@@ -61,12 +59,12 @@
 .hidden__btn {
   display: none;
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     display: block;
     margin-left: 32px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     margin-left: 0;
   }
 }
@@ -86,7 +84,7 @@
   align-items: center;
 }
 
-.page-header__list .page-header__item + .page-header__item {
+.page-header__list .page-header__item+.page-header__item {
   margin-left: 30px;
 }
 
@@ -118,7 +116,6 @@
   left: 0;
 
   width: 100vw;
-  // height: 100vh;
   z-index: 999;
   background-color: $primary-bg-color;
   transform: translateX(100%);
@@ -131,15 +128,15 @@
     width: auto;
   }
 
-  @media screen and (min-width: 480px) {
+  @include tel {
     padding: 20px;
   }
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     padding: 20px 32px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     display: none;
   }
 }
@@ -161,20 +158,18 @@
   padding-bottom: 64px;
   padding: 50px 40px;
 
-  @media screen and (min-width: 480px) and (max-width: 767px) {
-    // padding-top: 40px;
-    // padding-bottom: 88px;
+  @media screen and (min-width: $tel) and (max-width: calc($tablet - 1px)) {
     padding: 40px 32px;
     width: 100%;
   }
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     padding-top: 76px;
     width: 100%;
   }
 }
 
-.menu-header__list .menu-header__item + .menu-header__item {
+.menu-header__list .menu-header__item+.menu-header__item {
   margin-top: 32px;
 }
 
@@ -197,7 +192,7 @@
     color: $accent-text-color;
   }
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     font-size: 48px;
     line-height: 1.2;
   }
@@ -225,14 +220,11 @@
     display: block;
   }
 
-  @media screen and (min-width: 480px) {
+  @include tel {
     display: block;
   }
 
-  @media screen and (min-width: 768px) {
-  }
-
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     display: none;
   }
 }
@@ -245,7 +237,7 @@
 }
 
 .menu-toggle.menu {
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     display: none;
   }
 }

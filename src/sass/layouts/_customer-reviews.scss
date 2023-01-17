@@ -2,19 +2,19 @@
   color: black;
   display: block;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: calc($tablet - 1px)) {
     background-image: url(../images/bg_mobile.png);
     width: 100%;
     padding-bottom: 380px;
   }
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     background-image: url(../images/bg_tablet.png);
     padding-bottom: 335px;
     width: 100%;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     background-image: url(../images/bg_desktop.png);
     padding-bottom: 200px;
     width: 100%;
@@ -34,17 +34,6 @@
   margin-right: auto;
   margin-bottom: 32px;
 
-  // @media screen and (max-width: 767px) {
-  //   // margin-top: 178px;
-  // }
-
-  // @media screen and (min-width: 768px) {
-  //   // margin-top: px;
-  // }
-
-  // @media screen and (min-width: 1200px) {
-  //   margin-top: 20px;
-  // }
 }
 
 .reviews__text {
@@ -55,38 +44,30 @@
   color: #fcfcfc;
   padding: 35px 39px;
   margin-bottom: 32px;
+  width: 280px;
+  border-radius: 10px;
 
-  @media screen and (min-width: 320px) {
-    width: 280px;
-    border-radius: 10px;
-  }
-
-  @media screen and (min-width: 768px) {
+  @include tablet {
     width: 705px;
     border-radius: 24px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     width: 968px;
     height: 138px;
-    // margin-left: 168px;
-    // margin-right: 196px;
     border-radius: 24px;
   }
 }
 
 .reviews__client {
   color: #131313;
+  margin-bottom: 12px;
 
-  @media screen and (min-width: 320px) {
-    margin-bottom: 12px;
-  }
-
-  @media screen and (min-width: 768px) {
+  @include tablet {
     margin-bottom: 32px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     margin-bottom: 32px;
   }
 }

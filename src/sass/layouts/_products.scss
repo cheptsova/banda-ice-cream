@@ -8,11 +8,9 @@
   background-position: center;
   background-repeat: no-repeat;
 
-  @media screen and (max-width: 767px) {
-    background-image: url(../images/bg_mobile.png);
-  }
+  background-image: url(../images/bg_mobile.png);
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     margin: 0;
     background-image: url(../images/bg_tablet.png);
     background-size: cover;
@@ -22,7 +20,7 @@
 
   }
 
-  @media screen and (min-width: 1199.98px) {
+  @include desktop {
     background-image: url(../images/bg_desktop.png);
     background-size: cover;
     background-position: center;
@@ -43,12 +41,12 @@
   text-transform: uppercase;
   color: $tittle-text-color;
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     font-size: 34px;
     line-height: calc(42.73 / 34);
   }
 
-  @media screen and (min-width: 1199.98px) {
+  @include desktop {
     font-size: 36px;
     line-height: calc(45.25 / 36);
   }
@@ -64,20 +62,18 @@
   text-transform: uppercase;
   color: $tittle-text-color;
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     font-size: 22px;
     line-height: calc(26.82 / 22);
     margin-top: 84px;
   }
 
-  @media screen and (min-width: 1199.98px) {
+  @include desktop {
     font-size: 30px;
     line-height: calc(36.57 / 30);
     margin-top: 80px;
   }
 }
-
-
 
 .products__ice-cream {
   position: relative;
@@ -97,7 +93,7 @@
     background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
     box-shadow: 0px 8px 30px rgba(10, 136, 23, 0.25);
 
-    @media screen and (min-width: 1199.98px) {
+    @include desktop {
       width: 302px;
       height: 302px;
     }
@@ -116,11 +112,11 @@
 
     background-image: url(../images/ice-cream_mob.png);
 
-    @media screen and (min-width: 768px) {
+    @include tablet {
       background-image: url(../images/ice-cream_tab.png);
     }
 
-    @media screen and (min-width: 1199.98px) {
+    @include desktop {
       width: 302px;
       height: 302px;
       background-image: url(../images/ice-cream_desk.png);
@@ -139,11 +135,11 @@
     background-position: center;
     background-size: cover;
 
-    @media screen and (min-width: 768px) {
+    @include tablet {
       background-image: url(../images/ice-cream_tab-2x.png);
     }
 
-    @media screen and (min-width: 1199.98px) {
+    @include desktop {
       background-image: url(../images/ice-cream_desk-2x.png);
     }
   }
@@ -153,11 +149,11 @@
   (min-resolution: 3dppx) {
     background-image: url(../images/ice-cream_mob-3x.png);
 
-    @media screen and (min-width: 768px) {
+    @include tablet {
       background-image: url(../images/ice-cream_tab-3x.png);
     }
 
-    @media screen and (min-width: 1199.98px) {
+    @include desktop {
       background-image: url(../images/ice-cream_desk-3x.png);
     }
   }
@@ -181,7 +177,7 @@
     background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
     box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
 
-    @media screen and (min-width: 1199.98px) {
+    @include desktop {
       width: 302px;
       height: 302px;
     }
@@ -200,11 +196,11 @@
 
     background-image: url(../images/ice-coffee_mob.png);
 
-    @media screen and (min-width: 768px) {
+    @include tablet {
       background-image: url(../images/ice-coffee_tab.png);
     }
 
-    @media screen and (min-width: 1199.98px) {
+    @include desktop {
       width: 302px;
       height: 302px;
       background-image: url(../images/ice-coffee_desk.png);
@@ -223,7 +219,7 @@
     background-position: center;
     background-size: cover;
 
-    @media screen and (min-width: 768px) {
+    @include tablet {
       background-image: url(../images/ice-coffee_tab-2x.png);
     }
 
@@ -237,11 +233,11 @@
   (min-resolution: 3dppx) {
     background-image: url(../images/ice-coffee_mob-3x.png);
 
-    @media screen and (min-width: 768px) {
+    @include tablet {
       background-image: url(../images/ice-coffee_tab-3x.png);
     }
 
-    @media screen and (min-width: 1199.98px) {
+    @include desktop {
       background-image: url(../images/ice-coffee_desk-3x.png);
     }
 
@@ -266,7 +262,7 @@
     background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
     box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
 
-    @media screen and (min-width: 1199.98px) {
+    @include desktop {
       width: 302px;
       height: 302px;
     }
@@ -285,12 +281,12 @@
 
     background-image: url(../images/milkshakes_mob.png);
 
-    @media screen and (min-width: 768px) {
+    @include tablet {
       background-image: url(../images/milkshakes_tab.png);
 
     }
 
-    @media screen and (min-width: 1199.98px) {
+    @include desktop {
       width: 302px;
       height: 302px;
       background-image: url(../images/milkshakes_desk.png);
@@ -309,11 +305,11 @@
     background-position: center;
     background-size: cover;
 
-    @media screen and (min-width: 768px) {
+    @include tablet {
       background-image: url(../images/milkshakes_tab-2x.png);
     }
 
-    @media screen and (min-width: 1199.98px) {
+    @include desktop {
       background-image: url(../images/milkshakes_desk-2x.png);
     }
   }
@@ -323,11 +319,11 @@
   (min-resolution: 3dppx) {
     background-image: url(../images/milkshakes_mob-3x.png);
 
-    @media screen and (min-width: 768px) {
+    @include tablet {
       background-image: url(../images/milkshakes_tab-3x.png);
     }
 
-    @media screen and (min-width: 1199.98px) {
+    @include desktop {
       background-image: url(../images/milkshakes_desk-3x.png);
     }
   }
@@ -337,11 +333,11 @@
 .products__wrapper {
   margin-top: 148px;
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     margin-top: 200px;
   }
 
-  @media screen and (min-width: 1199.98px) {
+  @include desktop {
     margin-top: 303px;
   }
 }
@@ -356,12 +352,12 @@
   flex-direction: column;
   gap: 168px;
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     flex-direction: row;
     gap: 16px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     gap: 29px;
   }
 }
@@ -375,13 +371,13 @@
   border-radius: 24px;
   text-align: center;
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     padding-top: 108px;
     flex-basis: calc(100% - (16px*3)/3);
     height: 428px;
   }
 
-  @media screen and (min-width: 1199.98px) {
+  @include desktop {
     padding-top: 165px;
     flex-basis: calc(100% - (29px*3)/3);
     max-width: 370px;
@@ -401,7 +397,6 @@
 }
 
 .products__name {
-  font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: calc(24 / 20);
@@ -422,7 +417,7 @@
   color: $tittle-text-color;
   text-align: center;
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     margin-top: 66px;
   }
 }
