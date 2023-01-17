@@ -6,23 +6,32 @@
   transform: translate(-50%, -50%);
 
   padding: 28px;
-  max-width: 90vw;
-  height: 100vh;
+
+  width: 90vw;
+  height: auto;
 
   background-color: $primary-text-color;
   border: 2px solid $accent-color;
   border-radius: 10px;
 
   @include tablet {
-    padding: 32px;
-    max-width: 568px;
-    min-height: 445px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    width: 568px;
+    min-height: 449px;
   }
 }
 
 iframe {
   width: 100%;
-  height: auto;
+  height: 199px;
+  @include tablet {
+    height: 205px;
+    display: block;
+    margin-bottom: 32px;
+  }
 }
 
 .modal-readmore__title {
@@ -39,16 +48,15 @@ iframe {
 
   @include tablet {
     font-size: 20px;
+    margin-bottom: 32px;
   }
 }
 
 .modal-readmore__text {
-  margin-top: 32px;
-
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  height: 1.4;
+
   color: $tittle-text-color;
 
   @include tablet {
