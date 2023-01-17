@@ -4,9 +4,9 @@
   left: 50%;
   transform: translate(-50%, -50%);
   max-width: 280px;
-   z-index: 2;
-
-
+  height: 100vh;
+  overflow: scroll;
+  z-index: 2;
 
 
   background-color: $primary-text-color;
@@ -233,6 +233,8 @@
     height: 42px;
   }
 }
+
+
 
 .header-modal__comment {
   resize: none;
