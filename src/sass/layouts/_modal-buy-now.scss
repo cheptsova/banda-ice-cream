@@ -4,7 +4,6 @@
   left: 50%;
   transform: translate(-50%, -50%);
   max-width: 280px;
- 
    z-index: 2;
 
 
@@ -15,7 +14,6 @@
 
   @include tablet {
     max-width: 568px;
-    max-height: 644px;
     padding: 32px 54px;
   }
 }
