@@ -1,10 +1,11 @@
-.products__container {
-  padding-top: 60px;
+
+.products{
+    padding-top: 60px;
   padding-bottom: 60px;
   text-align: center;
   width: 100vw;
 
-  background-size: cover;
+   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
@@ -381,6 +382,7 @@
     padding-top: 165px;
     flex-basis: calc(100% - (29px*3)/3);
     max-width: 370px;
+    height: 536px;
   }
 }
 
