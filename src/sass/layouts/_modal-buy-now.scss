@@ -8,7 +8,6 @@
   overflow: scroll;
   z-index: 2;
 
-
   background-color: $primary-text-color;
   padding: 28px 28px 29px 28px;
 
@@ -22,7 +21,6 @@
   margin-bottom: 83px;
   text-align: center;
   font-family: 'Seymour One', sans-serif;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   color: $tittle-text-color;
@@ -70,20 +68,20 @@
   position: absolute;
 }
 
-.header-modal__checkbox:checked+.icecream {
-  background-color: #aec6a5;
+.header-modal__checkbox:checked + .icecream {
+  background-color: $modal-background-color;
 }
 
-.header-modal__checkbox:checked+.icecoffe {
-  background-color: #efd478;
+.header-modal__checkbox:checked + .icecoffe {
+  background-color: $modal-bcg-color;
 }
 
-.header-modal__checkbox:checked+.milkshake {
-  background-color: #d6936d;
+.header-modal__checkbox:checked + .milkshake {
+  background-color: $location-text-color;
 }
 
 .icecream {
-  border-color: #96af8c;
+  border-color: $modal-border-color;
 }
 
 .icecream::before {
@@ -96,9 +94,11 @@
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 50%;
-  background: linear-gradient(0deg,
+  background: linear-gradient(
+      0deg,
       rgba(156, 190, 143, 0.7),
-      rgba(156, 190, 143, 0.7)),
+      rgba(156, 190, 143, 0.7)
+    ),
     #d9d9d9;
   box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
 }
@@ -117,8 +117,8 @@
   background-image: url(../images/ice-cream_mob.png);
 
   @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     background-image: url(../images/ice-cream_mob-2x.png);
     background-position: center;
     background-size: cover;
@@ -126,7 +126,7 @@
 }
 
 .icecoffe {
-  border-color: #efd478;
+  border-color: $modal-bcg-color;
 }
 
 .icecoffe::before {
@@ -139,10 +139,12 @@
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 50%;
-  background: linear-gradient(0deg,
+  background: linear-gradient(
+      0deg,
       rgba(248, 210, 78, 0.7),
-      rgba(248, 210, 78, 0.7)),
-    #d9d9d9;
+      rgba(248, 210, 78, 0.7)
+    ),
+    $slick-btn-color;
   box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
 }
 
@@ -159,8 +161,8 @@
   background-image: url(../images/ice-coffee_mob.png);
 
   @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     background-image: url(../images/ice-coffee_mob-2x.png);
     background-position: center;
     background-size: cover;
@@ -168,7 +170,7 @@
 }
 
 .milkshake {
-  border-color: $location-text-colour;
+  border-color: $location-text-color;
 }
 
 .milkshake::before {
@@ -181,10 +183,12 @@
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 50%;
-  background: linear-gradient(0deg,
+  background: linear-gradient(
+      0deg,
       rgba(213, 117, 63, 0.7),
-      rgba(213, 117, 63, 0.7)),
-    #d9d9d9;
+      rgba(213, 117, 63, 0.7)
+    ),
+    $slick-btn-color;
   box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
 }
 
@@ -202,8 +206,8 @@
   background-image: url(../images/milkshakes_mob.png);
 
   @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     background-image: url(../images/milkshakes_mob-2x.png);
     background-position: center;
     background-size: cover;
@@ -233,8 +237,6 @@
     height: 42px;
   }
 }
-
-
 
 .header-modal__comment {
   resize: none;

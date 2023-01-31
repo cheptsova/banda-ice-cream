@@ -1,5 +1,5 @@
 .reviews {
-  color: black;
+  color: $accent-text-color;
   display: block;
 
   @media screen and (max-width: calc($tablet - 1px)) {
@@ -33,15 +33,14 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 32px;
-
 }
 
 .reviews__text {
   align-items: center;
   margin-left: auto;
   margin-right: auto;
-  background-color: #84a178;
-  color: #fcfcfc;
+  background-color: $primary-bg-color;
+  color: $primary-text-color;
   padding: 35px 39px;
   margin-bottom: 32px;
   width: 280px;
@@ -60,7 +59,7 @@
 }
 
 .reviews__client {
-  color: #131313;
+  color: $tittle-text-color;
   margin-bottom: 12px;
 
   @include tablet {
@@ -73,14 +72,14 @@
 }
 
 .slick-dots li button:before {
-  color: #d9d9d9;
+  color: $slick-btn-color;
   width: 12px;
   height: 12px;
   opacity: 1;
 }
 
 .slick-dots li.slick-active button:before {
-  color: #84a178;
+  color: $primary-bg-color;
   width: 12px;
   height: 12px;
 }

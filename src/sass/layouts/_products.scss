@@ -1,11 +1,10 @@
-
-.products{
-    padding-top: 60px;
+.products {
+  padding-top: 60px;
   padding-bottom: 60px;
   text-align: center;
   width: 100vw;
 
-   background-size: cover;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
@@ -18,7 +17,6 @@
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-
   }
 
   @include desktop {
@@ -91,7 +89,12 @@
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
-    background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+    background: linear-gradient(
+        0deg,
+        rgba(156, 190, 143, 0.7),
+        rgba(156, 190, 143, 0.7)
+      ),
+      #d9d9d9;
     box-shadow: 0px 8px 30px rgba(10, 136, 23, 0.25);
 
     @include desktop {
@@ -130,8 +133,8 @@
   background-image: url(../images/ice-cream_mob.png);
 
   @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     background-image: url(../images/ice-cream_mob-2x.png);
     background-position: center;
     background-size: cover;
@@ -146,8 +149,8 @@
   }
 
   @media (min-device-pixel-ratio: 3),
-  (min-resolution: 288dpi),
-  (min-resolution: 3dppx) {
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
     background-image: url(../images/ice-cream_mob-3x.png);
 
     @include tablet {
@@ -175,7 +178,12 @@
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
-    background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+    background: linear-gradient(
+        0deg,
+        rgba(248, 210, 78, 0.7),
+        rgba(248, 210, 78, 0.7)
+      ),
+      $slick-btn-color;
     box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
 
     @include desktop {
@@ -214,8 +222,8 @@
   background-image: url(../images/ice-coffee_mob.png);
 
   @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     background-image: url(../images/ice-coffee_mob-2x.png);
     background-position: center;
     background-size: cover;
@@ -230,8 +238,8 @@
   }
 
   @media (min-device-pixel-ratio: 3),
-  (min-resolution: 288dpi),
-  (min-resolution: 3dppx) {
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
     background-image: url(../images/ice-coffee_mob-3x.png);
 
     @include tablet {
@@ -241,7 +249,6 @@
     @include desktop {
       background-image: url(../images/ice-coffee_desk-3x.png);
     }
-
   }
 }
 
@@ -260,7 +267,12 @@
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
-    background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
+    background: linear-gradient(
+        0deg,
+        rgba(213, 117, 63, 0.7),
+        rgba(213, 117, 63, 0.7)
+      ),
+      #d9d9d9;
     box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
 
     @include desktop {
@@ -284,7 +296,6 @@
 
     @include tablet {
       background-image: url(../images/milkshakes_tab.png);
-
     }
 
     @include desktop {
@@ -300,8 +311,8 @@
   background-image: url(../images/milkshakes_mob.png);
 
   @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     background-image: url(../images/milkshakes_mob-2x.png);
     background-position: center;
     background-size: cover;
@@ -316,8 +327,8 @@
   }
 
   @media (min-device-pixel-ratio: 3),
-  (min-resolution: 288dpi),
-  (min-resolution: 3dppx) {
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
     background-image: url(../images/milkshakes_mob-3x.png);
 
     @include tablet {
@@ -330,7 +341,6 @@
   }
 }
 
-
 .products__wrapper {
   margin-top: 148px;
 
@@ -342,7 +352,6 @@
     margin-top: 303px;
   }
 }
-
 
 .products__list {
   padding: 0;
@@ -374,28 +383,28 @@
 
   @include tablet {
     padding-top: 108px;
-    flex-basis: calc(100% - (16px*3)/3);
+    flex-basis: calc(100% - (16px * 3) / 3);
     height: 428px;
   }
 
   @include desktop {
     padding-top: 165px;
-    flex-basis: calc(100% - (29px*3)/3);
+    flex-basis: calc(100% - (29px * 3) / 3);
     max-width: 370px;
     height: 536px;
   }
 }
 
 .products__ice-cream {
-  background-color: #AEC6A5;
+  background-color: $modal-background-color;
 }
 
 .products__ice-coffee {
-  background-color: #EFD478;
+  background-color: $modal-bcg-color;
 }
 
 .products__milkshakes {
-  background-color: $location-text-colour;
+  background-color: $location-text-color;
 }
 
 .products__name {
