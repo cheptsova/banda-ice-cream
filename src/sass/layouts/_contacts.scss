@@ -124,7 +124,7 @@
   margin-bottom: 24px;
 
   height: 1px;
-  background-color: #e1e1e1;
+  background-color: $line-color;
 }
 
 .contacts__address {
@@ -132,7 +132,6 @@
 
   & p {
     margin-bottom: 8px;
-    font-style: normal;
     color: $tittle-text-color;
 
     font-weight: 500;
@@ -151,8 +150,7 @@
 
   & a {
     height: 40px;
-    font-style: normal;
-    color: $location-text-colour;
+    color: $location-text-color;
     letter-spacing: 0.04em;
     line-height: 1.83;
     font-size: 12px;
@@ -172,7 +170,7 @@
   }
 
   & a:hover {
-    border-bottom: 1px solid $location-text-colour;
+    border-bottom: 1px solid $location-text-color;
   }
 }
 
@@ -195,7 +193,7 @@
 .contacts__time {
   font-size: 12px;
   line-height: 1.83;
-  color: #ababab;
+  color: $time-color;
 
   @include tablet {
     font-size: 14px;
@@ -284,7 +282,7 @@
   }
 
   &:disabled {
-    background-color: #ababab;
+    background-color: $time-color;
   }
 }
 
@@ -297,7 +295,7 @@
   }
 
   &:disabled {
-    border-color: #ababab;
+    border-color: $time-color;
   }
 }
 
