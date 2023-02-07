@@ -146,12 +146,6 @@
   margin: 0 auto;
   margin-bottom: 54px;
 
-  font-family: 'Seymour One';
-  font-size: 30px;
-  line-height: calc(38 / 30);
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-
   @include tel {
     margin-bottom: 12px;
   }
@@ -163,10 +157,6 @@
 
   @include desktop {
     margin-bottom: 121px;
-
-    font-size: 36px;
-    line-height: calc(45 / 36);
-    letter-spacing: 0.06em;
   }
 }
 

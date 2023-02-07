@@ -1,0 +1,12 @@
+
+.title {
+    font-family: 'Seymour One';
+    @include font-title ();
+
+    @include desktop {
+        @include font-title ($fs:36, $lh:1.25, $ls:0.06);
+      }
+}
+
+
+
