@@ -87,7 +87,7 @@
 
 <!-- Модалка Buy now-->
 <div class="backdrop-header is-hidden" data-modal id="modal-buynow">
-    <div class="modal header-modal">
+    <div class="modal">
       <button data-modal-close type="button" class="close-modal" >
         <svg class="icons-close" width="11" height="11">
             <use href="./images/icons.svg#icon-close"></use>
@@ -137,15 +137,25 @@
       </ul>
 
         <input
-          class="header-modal__input"
           type="text"
-          placeholder="Name"
-          required
+        class="modal__input"
+        placeholder="Name"
+        pattern="[a-zA-Z]+"
+        title="Name"
+        required
         />
-        <input class="header-modal__input" type="phone" placeholder="Phone" required/>
+        <input 
+         class="modal__input"
+        type="tel"
+        name="phone number"
+        placeholder="+380 (__) ___-__-__"
+        data-slots="_"
+        title="+380 (00) 000-00-00"
+        required
+        />
         <textarea
-          class="header-modal__input header-modal__comment"
-          name=""
+          class="modal__input modal__comment"
+          name="comment"
           id=""
           placeholder="Comment"
           cols="30"

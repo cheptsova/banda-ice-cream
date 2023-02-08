@@ -15,17 +15,18 @@
       contact you for further information. Please fill out the contact information below and 
       we will reach out for additional information. We appreciate your patience.
     </p>
+<div class="modal__form-wrap">
     <form class="contacts-modal__form">
       <input
         type="text"
-        class="contacts-modal__input"
+        class="modal__input"
         placeholder="Name"
         pattern="[a-zA-Z]+"
         title="Name"
         required
       />
       <input
-        class="contacts-modal__input"
+        class="modal__input"
         type="tel"
         name="phone number"
         placeholder="+380 (__) ___-__-__"
@@ -35,14 +36,14 @@
       />
       <input
         type="email"
-        class="contacts-modal__input"
+        class="modal__input"
         placeholder="Email"
         name="email"
         required
       />
 
       <textarea
-        class="contacts-modal__input contacts-modal__comment"
+        class="modal__input modal__comment"
         name="comment"
         placeholder="Comment"
         cols="30"
@@ -50,6 +51,8 @@
       ></textarea>
 
       <button class="form-button submit-button" type="submit">Submit</button>
+
+      </div>
     </form>
   </div>
 </div>

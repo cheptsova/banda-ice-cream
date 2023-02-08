@@ -31,23 +31,11 @@
 .products__tittle {
   margin-bottom: 40px;
 
-  font-family: 'Seymour One';
-  font-weight: 400;
-  font-size: 30px;
-  line-height: calc(37.71 / 30);
   text-align: center;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
   color: $tittle-text-color;
 
   @include tablet {
-    font-size: 34px;
-    line-height: calc(42.73 / 34);
-  }
-
-  @include desktop {
-    font-size: 36px;
-    line-height: calc(45.25 / 36);
+    @include font-title ($fs:34);
   }
 }
 

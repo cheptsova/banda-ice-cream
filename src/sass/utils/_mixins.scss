@@ -23,3 +23,18 @@
     @content;
   }
 }
+
+@mixin font-title($fs:30, $fw:400, $lh:1.27, $ls:0.04, $tt:uppercase) {
+  font-size: $fs + px;
+  font-weight: $fw;
+  line-height: $lh;
+  letter-spacing: $ls + em;
+  text-transform: $tt;
+}
+
+@mixin font-input($fs:12, $fw:400, $lh:1.4, $ls:0.04) {
+  font-size: $fs + px;
+  font-weight: $fw;
+  line-height: $lh;
+  letter-spacing: $ls + em;
+}

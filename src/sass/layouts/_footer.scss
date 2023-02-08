@@ -30,40 +30,29 @@
   display: inline-flex;
   flex-direction: column;
   width: 232px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.22;
-  text-transform: uppercase;
+  @include font-title ($fs:18, $fw:700, $lh:1.22);
 
   @include tablet {
     width: 350px;
-    font-size: 26px;
-    line-height: 1.23;
-    letter-spacing: 0.04em;
+    @include font-title ($fs:26, $fw:700, $lh:1.23);
   }
 
   @include desktop {
     width: 505px;
-    font-weight: 400;
-    font-size: 30px;
+  @include font-title ($fs:30);
   }
 }
 
 .footer-title__span {
   margin-top: 16px;
-  font-size: 34px;
-  line-height: 1.2;
-  letter-spacing: 0.04em;
+  @include font-title ($fs:34, $lh:1.2);
 
   @include tablet {
-    font-size: 48px;
-    line-height: 1.23;
-    letter-spacing: 0.06em;
+    @include font-title ($fs:48, $lh:1.23, $ls:0.06);
   }
 
   @include desktop {
-    font-weight: 700;
-    font-size: 58px;
+       @include font-title ($fs:58, $fw:700);
   }
 }
 

@@ -24,17 +24,12 @@
 }
 
 .hero__title {
-  font-family: 'Seymour One';
-  font-size: 26px;
-  line-height: 1.26;
-  letter-spacing: 0.04em;
   max-width: 247px;
-  text-transform: uppercase;
+  @include font-title ($fs: 26);
 
   @include desktop {
-    font-size: 38px;
-    line-height: 1.2;
     max-width: 347px;
+    @include font-title ($fs: 38, $lh: 1.2);
   }
 }
 
@@ -53,7 +48,7 @@
   }
 }
 
-.hero-list__numbers .hero-list__item + .hero-list__item {
+.hero-list__numbers .hero-list__item+.hero-list__item {
   @include tablet {
     margin-top: 20px;
   }
@@ -63,7 +58,7 @@
   }
 }
 
-.hero-list__item > span {
+.hero-list__item>span {
   font-weight: 900;
   font-size: 28px;
   line-height: 1.2;
